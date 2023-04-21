@@ -1,0 +1,90 @@
+{#
+For guidance on how to use layouts see:
+https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
+#}
+
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+
+
+{% block header %}
+<header class="dfeuk-header" role="banner">
+  <div class="dfeuk-width-container dfeuk-header__container app-width-container">
+    <div class="dfeuk-header__logo">
+      <a class="dfeuk-header__link dfeuk-header__link--service " href="l1-home" aria-label="DfE digital service manual homepage">
+        <img src="/public/images/dfe-logo.png" alt="Back to the homepage" class="dfeuk-header__logo-img"></img>
+        <span class="dfeuk-header__service-name">{{serviceName}}</span></a>
+    </div>
+     <div class="dfeuk-header__content" id="content-header">
+      <div class="dfeuk-header__menu">
+        <button class="dfeuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-expanded="false">Menu</button>
+      </div>
+    </div> 
+  </div>
+
+
+
+
+   <nav class="dfeuk-header__navigation app-header__navigation" id="header-navigation" role="navigation" aria-label="Site navigation" aria-labelledby="label-navigation">
+    <div class="dfeuk-width-container app-width-container">
+      <p class="dfeuk-header__navigation-title">
+        <span id="label-navigation">Menu</span>
+        <button class="dfeuk-header__navigation-close" id="close-menu">
+          <svg class="dfeuk-icon dfeuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+          </svg>
+          <span class="dfeuk-u-visually-hidden">Close menu</span>
+        </button>
+      </p>
+      <ul class="dfeuk-header__navigation-list">
+        <li class="dfeuk-header__navigation-item dfeuk-header__navigation-item--for-mobile">
+          <a class="dfeuk-header__navigation-link" href="l1-home">
+              Home
+              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" width="27" height="27">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+          <li class="dfeuk-header__navigation-item">
+            <a class="dfeuk-header__navigation-link" href="l3-all-choices">
+              All choices
+              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfeuk-header__navigation-item">
+            <a class="dfeuk-header__navigation-link" href="/manage/">
+              Opportunities near me
+              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfeuk-header__navigation-item app-header__navigation-item__item">
+            <a class="dfeuk-header__navigation-link" href="https://nationalcareers.service.gov.uk/explore-careers">
+              Explore careers
+              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="dfeuk-header__navigation-item">
+            <a class="dfeuk-header__navigation-link" href="/reports/">
+              Help and support
+              <svg class="dfeuk-icon dfeuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"  width="34" height="34">
+                <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+              </svg>
+            </a>
+          </li>
+          
+      </ul>
+    </div>
+  </nav>
+</header>
+{% endblock %}
+
+
+
+
+<!-- <li class="dfeuk-header__navigation-item app-header__navigation-item__item--current"> -->

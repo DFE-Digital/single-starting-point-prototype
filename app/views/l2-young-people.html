@@ -1,0 +1,106 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<a href="javascript:history.back();" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="L1-home">Home</a>
+     </li>
+     <li class="govuk-breadcrumbs__list-item">
+      Young people
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+    
+
+
+    <h1 class="govuk-heading-xl">
+      Young people
+    </h1>
+
+    <p class="govuk-body-l">Support to help you make the choices you need for jobs, training and courses.</p>
+
+
+
+</div>
+</div>
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full width">
+
+
+
+<ul class="dfeuk-grid-row dfeuk-card-group">
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+     <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/yp-choices-school.png" alt="a student smiling at the camera">
+        <div class="dfeuk-card__content">
+           <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="l3-options-school" >Options after leaving school and education</a>
+           </h2>
+           <p class="dfeuk-card__description">Explore what you could do next</p>
+        </div>
+     </div>
+  </li>
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/yp-help-applying.png" alt="a young person looking in a mirror while getting ready for a job interview">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="https://www.gov.uk/guidance/government-design-principles" >Help with applying for 
+               jobs and training</a>
+          </h2>
+          <p class="dfeuk-card__description">Support for interviews and writing applications for jobs and training</p>
+       </div>
+    </div>
+ </li>
+ <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+  <div class="dfeuk-card dfeuk-card--clickable">
+     <img class="dfeuk-card__img" src="/public/images/yp-what-job.png" alt="two friends smiling and looking at a phone">
+     <div class="dfeuk-card__content">
+        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+           <a href="l3-what-job" >What job should I do?</a>
+        </h2>
+        <p class="dfeuk-card__description">Explore where experiences or interests could take you</p>
+     </div>
+  </div>
+</li>
+<li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+  <div class="dfeuk-card dfeuk-card--clickable">
+   <img class="dfeuk-card__img" src="/public/images/yp-explore.png" alt="a group of young people in overalls laughing">
+     <div class="dfeuk-card__content">
+        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+           <a href="https://nationalcareers.service.gov.uk/explore-careers" >Explore different careers</a>
+        </h2>
+        <p class="dfeuk-card__description">Discover careers you didn’t know existed</p>
+     </div>
+  </div>
+</li>
+</ul>
+ 
+
+
+
+   
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block content %}
+
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      {{ serviceName }}
+    </h1>
+
+    <p class="govuk-body">Support to help you make the choices you need for jobs, training and courses</p>
+
+</div>
+</div>
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+
+<ul class="dfeuk-grid-row dfeuk-card-group">
+  <li class="dfeuk-grid-column-one-half
+   dfeuk-card-group__item">
+     <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/young-people.png" alt="Three young people laughing around a mobile phone">
+        <div class="dfeuk-card__content">
+           <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="l2-young-people" >Young people</a>
+           </h2>
+           <p class="dfeuk-card__description">I’m in education or just about to leave</p>
+        </div>
+     </div>
+  </li>
+
+  <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/adults.png" alt="a man laughing">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l2-adults" >Adults</a>
+          </h2>
+          <p class="dfeuk-card__description">I’m looking for a new job or how to get into work</p>
+       </div>
+    </div>
+ </li>
+ <li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+  <div class="dfeuk-card dfeuk-card--clickable">
+   <img class="dfeuk-card__img" src="/public/images/parents.png" alt="a man helping his child while using a laptop">
+     <div class="dfeuk-card__content">
+        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+           <a href="l2-parents" >Parents and carers</a>
+        </h2>
+        <p class="dfeuk-card__description">I want to support my child with their career</p>
+     </div>
+  </div>
+</li>
+<li class="dfeuk-grid-column-one-half dfeuk-card-group__item">
+  <div class="dfeuk-card dfeuk-card--clickable">
+   <img class="dfeuk-card__img" src="/public/images/teachers.png" alt="a teacher smiling">
+     <div class="dfeuk-card__content">
+        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+           <a href="l2-teachers" >Teachers</a>
+        </h2>
+        <p class="dfeuk-card__description">I want to support students with their career</p>
+     </div>
+  </div>
+</li>
+</ul>
+ 
+
+</div>
+</div>
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-two-thirds">
+
+    
+{% include "/includes/_adviser-resource" %}
+
+ 
+
+
+  </div>
+</div>
+
+
+
+
+{% endblock %}
