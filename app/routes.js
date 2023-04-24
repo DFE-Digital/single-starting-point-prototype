@@ -6,4 +6,10 @@
 const govukPrototypeKit = require('govuk-prototype-kit')
 const router = govukPrototypeKit.requests.setupRouter()
 
+router.get('/', function (req, res) {
+    res.redirect('/l1-home')
+  })
+
+
+
 // Add your routes here
