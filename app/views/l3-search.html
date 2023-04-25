@@ -1,0 +1,72 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<a href="javascript:history.back();" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     <li class="govuk-breadcrumbs__list-item">
+      Find opportunities near me
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+    <form action="/l3-search-results" method="post" novalidate>
+      <div class="govuk-form-group">
+        <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6">
+          <label class="govuk-label govuk-label--xl" for="postcode">
+            Find opportunities near me
+          </label>
+        </h1>
+        <p class="govuk-body-l">Where do you want to search?</p>
+
+        <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code">
+        <button class="govuk-button" data-module="govuk-button">
+          Go
+        </button>
+              <p class="govuk-body">City, town, full or partial postcode (for example London or 'SW1A 1AA', or 'SW'). </p>
+
+      </div>
+
+   
+    </form>
+
+
+   
+
+    
+
+   
+
+ 
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}
