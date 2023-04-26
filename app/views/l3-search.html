@@ -24,7 +24,7 @@
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full">
 
 
 
@@ -34,19 +34,32 @@
 
     <form action="/l3-search-results" method="post" novalidate>
       <div class="govuk-form-group">
-        <h1 class="govuk-label-wrapper govuk-!-margin-bottom-6">
+        <h1 class= "govuk-label-wrapper govuk-!-margin-bottom-7">
           <label class="govuk-label govuk-label--xl" for="postcode">
             Find opportunities near me
           </label>
         </h1>
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-one-third">
+
         <p class="govuk-body-l">Where do you want to search?</p>
 
-        <input class="govuk-input govuk-input--width-10" id="postcode" name="postcode" type="text" autocomplete="postal-code">
-        <button class="govuk-button" data-module="govuk-button">
-          Go
-        </button>
-              <p class="govuk-body">City, town, full or partial postcode (for example London or 'SW1A 1AA', or 'SW'). </p>
+        <input class=" govuk-input govuk-input--width-21" id="postcode" name="postcode" type="text" autocomplete="postal-code">
+        <p class="govuk-!-margin-top-3 govuk-body">City, town, full or partial postcode (for example London or 'SW1A 1AA', or 'SW'). </p>
 
+        </div>
+
+        <div class="govuk-grid-column-one-half">
+
+        <p class="govuk-body-l">Keyword (optional)</p>
+
+        <input class="govuk-input govuk-input--width-20" id="postcode" name="postcode" type="text" autocomplete="postal-code">
+        <button class="govuk-!-margin-left-6 govuk-button" data-module="govuk-button">
+          Find opportunities
+        </button>
+
+        </div>
       </div>
 
    
