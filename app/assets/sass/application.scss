@@ -11495,6 +11495,8 @@ b {
 
 .dfeuk-card__img {
   border-bottom: 1px solid #aeb7bd; /* [2] */
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
   display: block;
   width: 100%;
 }
@@ -11530,6 +11532,8 @@ b {
   ========================================================================== */
 .dfeuk-card--clickable {
   border-bottom-width: 4px;
+  border-radius: 25px;
+
 }
 .dfeuk-card--clickable:hover, .dfeuk-card--clickable:active {
   cursor: pointer;
