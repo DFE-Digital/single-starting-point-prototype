@@ -22,6 +22,9 @@ router.get('/', function (req, res) {
 
 // Add your routes here
 
+
+// HELP WITH APPLYING
+
 router.get('/l3-help-with-applying', function (req, res) {
   var referer=req.headers.referer
   const refererUrl = new URL(referer);
@@ -80,3 +83,129 @@ router.get('/l4-application-form', function (req, res) {
   res.render('l4-application-form', {pagename,page})
 })
 
+
+
+
+
+
+
+
+// EXPLORE DIFFERENT CAREERS
+
+router.get('/l3-explore', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var page=refererUrl.pathname
+  var file=page.substring(page.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(page)
+  console.log(file)
+  var pagename=""
+  if(file === "l2-adults") {
+  pagename="Adults"
+  }
+  else if(file === "l2-young-people"){
+  pagename="Young People" 
+  }
+  req.session['referingroute']=pagename
+  req.session['referingUrl']=page
+  res.render('l3-explore', {pagename,page})
+})
+
+
+router.get('/l4-job-idea-generator', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('l4-job-idea-generator', {pagename,page})
+})
+
+
+router.get('/jig-1', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-1', {pagename,page})
+})
+
+router.get('/jig-2', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-2', {pagename,page})
+})
+
+router.get('/jig-3', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-3', {pagename,page})
+})
+
+router.get('/jig-4', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-4', {pagename,page})
+})
+
+router.get('/jig-5', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-5', {pagename,page})
+})
+
+router.get('/jig-6', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-6', {pagename,page})
+})
+
+router.get('/jig-results', function (req, res) {
+  var pagename=""
+  if(req.session['referingroute'] === "Adults") {
+  pagename="Adults"
+  }
+  else if(req.session['referingroute'] === "Young People"){
+  pagename="Young People" 
+  }
+  var page=req.session['referingUrl']
+  res.render('jig-results', {pagename,page})
+})
