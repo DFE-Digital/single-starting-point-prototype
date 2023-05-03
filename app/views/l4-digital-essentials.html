@@ -11,9 +11,11 @@
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
         </li>
+        {% if(page !== "" and pagename !== "") %}
         <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="l3-choices-retrain">Choices to retrain and find work</a>
-        </li>
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
         <li class="govuk-breadcrumbs__list-item">
          Digital essential skills
         </li>

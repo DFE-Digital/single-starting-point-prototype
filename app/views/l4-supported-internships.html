@@ -11,7 +11,11 @@
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
         </li>
-       
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
         <li class="govuk-breadcrumbs__list-item">
          Supported internships
         </li>
