@@ -25,6 +25,7 @@ router.get('/', function (req, res) {
 
 // YOUNG PEOPLE AND ADULTS
 
+
 router.get('/l2-young-people', function (req, res) {
   req.session['referingroute']="Young People"
   req.session['referingUrl']="l2-young-people"
@@ -35,6 +36,12 @@ router.get('/l2-adults', function (req, res) {
   req.session['referingroute']="Adults"
   req.session['referingUrl']="l2-adults"
   res.render('l2-adults', {})
+})
+
+router.get('/l3-all-choices', function (req, res) {
+  req.session['referingroute']="Training choices"
+  req.session['referingUrl']="l3-all-choices"
+  res.render('l3-all-choices', {})
 })
 
 // HELP WITH APPLYING
@@ -546,7 +553,6 @@ router.get('/campaign-3', function (req, res) {
 
 router.get('/l4-apprenticeships', function (req, res) {
   var referer=req.headers.referer
-  console.log("jonny")
   const refererUrl = new URL(referer);
   var pagel3=refererUrl.pathname
   var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
@@ -560,6 +566,9 @@ router.get('/l4-apprenticeships', function (req, res) {
   else if(file === "l3-choices-retrain"){
   pagenamel3="Choices to retrain and find work" 
   }
+  // else if(file === "l3-all-choices"){
+  //   pagenamel3="Training choices" 
+  //   }
   req.session['referingroutel3']=pagenamel3
   req.session['referingUrll3']=pagel3
 var page = req.session['referingUrl']
