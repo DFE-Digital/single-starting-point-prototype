@@ -285,19 +285,19 @@ router.get('/l3-choices-retrain', function (req, res) {
 
 
 
-// COURSE PAGES
+// COURSE PAGES - overwritten
 
-router.get('/l4-alevels', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-alevels', {pagename,page})
-})
+// router.get('/l4-alevels', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-alevels', {pagename,page})
+// })
 
 // router.get('/l4-apprenticeships', function (req, res) {
 //   var pagename=""
@@ -311,173 +311,173 @@ router.get('/l4-alevels', function (req, res) {
 //   res.render('l4-apprenticeships', {pagename,page})
 // })
 
-router.get('/l4-digital-essentials', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-digital-essentials', {pagename,page})
-})
+// router.get('/l4-digital-essentials', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-digital-essentials', {pagename,page})
+// })
 
-router.get('/l4-english-essentials', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-english-essentials', {pagename,page})
-})
+// router.get('/l4-english-essentials', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-english-essentials', {pagename,page})
+// })
 
-router.get('/l4-find-a-job', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-find-a-job', {pagename,page})
-})
+// router.get('/l4-find-a-job', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-find-a-job', {pagename,page})
+// })
 
-router.get('/l4-free-courses', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-free-courses', {pagename,page})
-})
+// router.get('/l4-free-courses', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-free-courses', {pagename,page})
+// })
 
-router.get('/l4-higher-education', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-higher-education', {pagename,page})
-})
+// router.get('/l4-higher-education', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-higher-education', {pagename,page})
+// })
 
-router.get('/l4-htqs', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-htqs', {pagename,page})
-})
+// router.get('/l4-htqs', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-htqs', {pagename,page})
+// })
 
-router.get('/l4-multiply', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-multiply', {pagename,page})
-})
+// router.get('/l4-multiply', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-multiply', {pagename,page})
+// })
 
-router.get('/l4-numeracy-essentials', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-numeracy-essentials', {pagename,page})
-})
+// router.get('/l4-numeracy-essentials', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-numeracy-essentials', {pagename,page})
+// })
 
-router.get('/l4-school-leavers', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-school-leavers', {pagename,page})
-})
+// router.get('/l4-school-leavers', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-school-leavers', {pagename,page})
+// })
 
-router.get('/l4-skills-bootcamps', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-skills-bootcamps', {pagename,page})
-})
+// router.get('/l4-skills-bootcamps', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-skills-bootcamps', {pagename,page})
+// })
 
-router.get('/l4-skills-toolkit', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-skills-toolkit', {pagename,page})
-})
+// router.get('/l4-skills-toolkit', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-skills-toolkit', {pagename,page})
+// })
 
-router.get('/l4-supported-internships', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-supported-internships', {pagename,page})
-})
+// router.get('/l4-supported-internships', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-supported-internships', {pagename,page})
+// })
 
-router.get('/l4-tlevels', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-tlevels', {pagename,page})
-})
+// router.get('/l4-tlevels', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-tlevels', {pagename,page})
+// })
 
-router.get('/l4-vtqs', function (req, res) {
-  var pagename=""
-  if(req.session['referingroute'] === "Adults") {
-  pagename="Adults"
-  }
-  else if(req.session['referingroute'] === "Young People"){
-  pagename="Young People" 
-  }
-  var page=req.session['referingUrl']
-  res.render('l4-vtqs', {pagename,page})
-})
+// router.get('/l4-vtqs', function (req, res) {
+//   var pagename=""
+//   if(req.session['referingroute'] === "Adults") {
+//   pagename="Adults"
+//   }
+//   else if(req.session['referingroute'] === "Young People"){
+//   pagename="Young People" 
+//   }
+//   var page=req.session['referingUrl']
+//   res.render('l4-vtqs', {pagename,page})
+// })
 
 
 // CAMPAIGN 1
@@ -549,7 +549,30 @@ router.get('/campaign-3', function (req, res) {
 })
 
 
-// OPTIONS VS CHOICES
+// OPTIONS VS CHOICES - SCHEME PAGES
+
+router.get('/l4-alevels', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-alevels', {pagename,page,pagenamel3,pagel3})
+})
 
 router.get('/l4-apprenticeships', function (req, res) {
   var referer=req.headers.referer
@@ -566,9 +589,6 @@ router.get('/l4-apprenticeships', function (req, res) {
   else if(file === "l3-choices-retrain"){
   pagenamel3="Choices to retrain and find work" 
   }
-  // else if(file === "l3-all-choices"){
-  //   pagenamel3="Training choices" 
-  //   }
   req.session['referingroutel3']=pagenamel3
   req.session['referingUrll3']=pagel3
 var page = req.session['referingUrl']
@@ -577,3 +597,324 @@ var pagename = req.session['referingroute']
   res.render('l4-apprenticeships', {pagename,page,pagenamel3,pagel3})
 })
 
+router.get('/l4-digital-essentials', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-digital-essentials', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-english-essentials', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-english-essentials', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-find-a-job', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-find-a-job', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-free-courses', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-free-courses', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-higher-education', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-higher-education', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-htqs', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-htqs', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-multiply', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-multiply', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-numeracy-essentials', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-numeracy-essentials', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-school-leavers', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-school-leavers', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-skills-bootcamps', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-skills-bootcamps', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-skills-toolkit', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-skills-toolkit', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-supported-internships', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-supported-internships', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-tlevels', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-tlevels', {pagename,page,pagenamel3,pagel3})
+})
+
+router.get('/l4-vtqs', function (req, res) {
+  var referer=req.headers.referer
+  const refererUrl = new URL(referer);
+  var pagel3=refererUrl.pathname
+  var file=pagel3.substring(pagel3.lastIndexOf('/')+1)
+  console.log(referer)
+  console.log(pagel3)
+  console.log(file)
+  var pagenamel3=""
+  if(file === "l3-options-school") {
+  pagenamel3="Options after leaving school or education"
+  }
+  else if(file === "l3-choices-retrain"){
+  pagenamel3="Choices to retrain and find work" 
+  }
+  req.session['referingroutel3']=pagenamel3
+  req.session['referingUrll3']=pagel3
+var page = req.session['referingUrl']
+var pagename = req.session['referingroute']
+
+  res.render('l4-vtqs', {pagename,page,pagenamel3,pagel3})
+})
