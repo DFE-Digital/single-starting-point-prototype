@@ -30,7 +30,7 @@
      <h2 class="govuk-summary-card__title">Filters</h2>
      <ul class="govuk-summary-card__actions">
        <li class="govuk-summary-card__action">
-         <a class="govuk-link" href="/reports/">
+         <a class="govuk-link" href="/l3-all-choices-with-filters">
      Clear filters
            </a>
        </li>
@@ -38,70 +38,126 @@
    </div>
    <div class="govuk-summary-card__content">
 
-     <form method="post" action="/reports/apply-filter">
+     <form method="post" action="#">
        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+         
+         
          <div class="govuk-accordion__section">
            <div class="govuk-accordion__section-header">
              <h2 class="govuk-accordion__section-heading">
                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-             Outcomes
+             Type of course
              </span>
              </h2>
            </div>
            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
              <div class="govuk-form-group">
                <fieldset class="govuk-fieldset">
-                 <legend class="govuk-fieldset__legend">
+                 <!-- <legend class="govuk-fieldset__legend">
                    Peer review outcome
-                </legend>
+                </legend> -->
                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
                    <div class="govuk-checkboxes__item">
                      <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" {{checked("filter_outcome","Red")}}>
                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
-                      Red
+                      Classroom based
                       </label>
                    </div>
                    <div class="govuk-checkboxes__item">
                      <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" {{checked("filter_outcome","Amber")}}>
                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
-                      Amber
+                      Work based
                       </label>
                    </div>
                    <div class="govuk-checkboxes__item">
                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
-                      Green
+                      Combined work and classroom based
                       </label>
                    </div>
                  </fieldset>
                </div>
              </div>
            </div>
-           <div class="govuk-accordion__section">
-             <div class="govuk-accordion__section-header">
-               <h2 class="govuk-accordion__section-heading">
-                 <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-                Portfolio
-                </span>
-               </h2>
-             </div>
-             <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-             Need to add options
-          </div>
-           </div>
-           <div class="govuk-accordion__section">
-             <div class="govuk-accordion__section-header">
-               <h2 class="govuk-accordion__section-heading">
-                 <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-                Deputy Director
-                </span>
-               </h2>
-             </div>
-             <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-             Need to add options
-          </div>
 
-           </div>
+
+           <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Length of time
+              </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <!-- <legend class="govuk-fieldset__legend">
+                    Peer review outcome
+                 </legend> -->
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" {{checked("filter_outcome","Red")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                       Up to 4 months
+                       </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" {{checked("filter_outcome","Amber")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                       4 to 12 months
+                       </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                       A year or more
+                       </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+
+
+           <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Cost
+              </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <!-- <legend class="govuk-fieldset__legend">
+                    Peer review outcome
+                 </legend> -->
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" {{checked("filter_outcome","Red")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                       Free
+                       </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" {{checked("filter_outcome","Amber")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                       Paid
+                       </label>
+                    </div>
+                    <!-- <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                       Combined work and classroom based
+                       </label>
+                    </div> -->
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+           
          </div>
          <button class="govuk-button" data-module="govuk-button">
           Apply filter
