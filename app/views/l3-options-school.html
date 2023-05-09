@@ -23,195 +23,387 @@
 {% endblock %}
 
 
-
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-
-
-
-
-
-
-    <h1 class="govuk-heading-xl">
-      Options after leaving school or education
-    </h1>
-
-    <p class="govuk-body-l">Explore what you could do next</p>
-
-    <p class="govuk-body">Here you will find information about the different choices you can make after you have finished school, education or training.     </p>
-
-
-    <ul class="govuk-list govuk-list--bullet">
-      <li>
-         <a href="#combine">Combine work and study </a>      
-      </li>
-      <li>
-         <a href="#study">Study</a>  
-      </li>
-      <li>
-        <a href="#work">Work</a>  
-      </li>
-    </ul>
-    
-
-    <h2 id="combine"class="govuk-heading-m">
-      Combine work and study
-   </h2>
-
-
-
+<div class="govuk-grid-column-full">
+<h1 class="govuk-heading-xl">Training choices</h1>
 </div>
 </div>
+
 
 <div class="govuk-grid-row">
-   <div class="govuk-grid-column-full">
+   <div class="govuk-grid-column-one-quarter">
 
+<div class="govuk-summary-card">
+   <div class="govuk-summary-card__title-wrapper">
+     <h2 class="govuk-summary-card__title">Filters</h2>
+     <ul class="govuk-summary-card__actions">
+       <li class="govuk-summary-card__action">
+         <a class="govuk-link" href="/l3-all-choices-with-filters">
+     Clear filters
+           </a>
+       </li>
+     </ul>
+   </div>
+   <div class="govuk-summary-card__content">
 
-   <ul class="dfeuk-grid-row dfeuk-card-group">
-    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-       <div class="dfeuk-card dfeuk-card--clickable">
-          <div class="dfeuk-card__content">
-             <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                <a href="l4-apprenticeships" >Apprenticeships</a>
+     <form method="post" action="#">
+       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+         
+         
+         <div class="govuk-accordion__section">
+           <div class="govuk-accordion__section-header">
+             <h2 class="govuk-accordion__section-heading">
+               <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+             Type of course
+             </span>
              </h2>
-             <p class="dfeuk-card__description">Apprenticeships are real jobs that allow you to earn a wage while you learn. They can take between 1 and 5 years to complete, depending on the level.</p>
-          </div>
-       </div>
-    </li>
-  
-    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-      <div class="dfeuk-card dfeuk-card--clickable">
-         <div class="dfeuk-card__content">
-            <h2 class="dfeuk-card__heading dfeuk-heading-m">
-               <a href="l4-tlevels" >T levels</a>
-            </h2>
-            <p class="dfeuk-card__description">T Levels are nationally-recognised qualifications for 16 to 19-year-olds that takes 2 years to complete.</p>
+           </div>
+           <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+             <div class="govuk-form-group">
+               <fieldset class="govuk-fieldset">
+                 <!-- <legend class="govuk-fieldset__legend">
+                   Peer review outcome
+                </legend> -->
+                 <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                   <div class="govuk-checkboxes__item">
+                     <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" {{checked("filter_outcome","Red")}}>
+                     <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                      Classroom based
+                      </label>
+                   </div>
+                   <div class="govuk-checkboxes__item">
+                     <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" {{checked("filter_outcome","Amber")}}>
+                     <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                      Work based
+                      </label>
+                   </div>
+                   <div class="govuk-checkboxes__item">
+                     <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
+                     <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                      Combined work and classroom based
+                      </label>
+                   </div>
+                 </fieldset>
+               </div>
+             </div>
+           </div>
+
+
+           <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Length of time
+              </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <!-- <legend class="govuk-fieldset__legend">
+                    Peer review outcome
+                 </legend> -->
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" {{checked("filter_outcome","Red")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                       Up to 4 months
+                       </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" {{checked("filter_outcome","Amber")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                       4 to 12 months
+                       </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                       A year or more
+                       </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+
+
+           <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Cost
+              </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <!-- <legend class="govuk-fieldset__legend">
+                    Peer review outcome
+                 </legend> -->
+                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome" name="filter_outcome" type="checkbox" value="Red" {{checked("filter_outcome","Red")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome">
+                       Free
+                       </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome" type="checkbox" value="Amber" {{checked("filter_outcome","Amber")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                       Paid
+                       </label>
+                    </div>
+                    <!-- <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
+                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                       Combined work and classroom based
+                       </label>
+                    </div> -->
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+           
          </div>
+         <button class="govuk-button" data-module="govuk-button">
+          Apply filter
+          </button>
+       </form>
+     </div>
+   </div>
+
+   </div>
+
+
+
+
+<!-- OVERALL COURSES COLUMN -->
+      <div class="govuk-grid-column-two-thirds">
+<!-- OVERALL COURSES COLUMN -->
+
+
+
+
+      <div class="govuk-grid-column-full">
+         <h2 class="govuk-link"><a href="https://www.gov.uk/find-a-job">Find a job</a></h2>
+         <p class="govuk-body">Find full or part-time work using the 'Find a job' service to search and apply for jobs in England, Scotland and Wales.
+         </p>
+         <hr>
       </div>
-   </li>
-   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-    <div class="dfeuk-card dfeuk-card--clickable">
-       <div class="dfeuk-card__content">
-          <h2 class="dfeuk-card__heading dfeuk-heading-m">
-             <a href="l4-vtqs" >Vocational Technical Qualifications (VTQs)</a>
-          </h2>
-          <p class="dfeuk-card__description">Vocational Technical Qualifications (VTQs) are practical qualifications for over 16s. They're designed to help you get the skills you need to start your career or go on to higher levels of education.</p>
-       </div>
-    </div>
-  </li>
-  </ul>
+
+      
 
 
 
+      <div class="govuk-grid-column-full">
+         <h2 class="govuk-link"><a href="l4-supported-internships">Supported internships with an education, health and care plan</a></h2>
+         <p class="govuk-body">Supported internships are an unpaid work-based study programme for those aged 16 to 24 that usually lasts for one year. It includes an extended work placement that lasts for at least 6 months.
+         </p>
 
-
-   <h2 id="study"class="govuk-heading-m">
-    Study
-   </h2>
-
-
-
-
-
-
-
-   <ul class="dfeuk-grid-row dfeuk-card-group">
-    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-       <div class="dfeuk-card dfeuk-card--clickable">
-          <div class="dfeuk-card__content">
-             <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                <a href="l4-htqs" >Higher Technical Qualifications (HTQs)</a>
-             </h2>
-             <p class="dfeuk-card__description">Higher Technical Qualifications (HTQs) are technical qualifications that employers have helped develop so you can get the right training and skills you need to succeed at work.</p>
-          </div>
-       </div>
-    </li>
-  
-    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-      <div class="dfeuk-card dfeuk-card--clickable">
-         <div class="dfeuk-card__content">
-            <h2 class="dfeuk-card__heading dfeuk-heading-m">
-               <a href="l4-alevels" >A levels</a>
-            </h2>
-            <p class="dfeuk-card__description">A levels are subject-based qualifications usually assessed by exams. They can lead to further study, training or work.</p>
+         <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>Qualification Level:</strong></p>
+         <p class="govuk-body">Informal with no qualification</p>
          </div>
-      </div>
-   </li>
-   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-    <div class="dfeuk-card dfeuk-card--clickable">
-       <div class="dfeuk-card__content">
-          <h2 class="dfeuk-card__heading dfeuk-heading-m">
-             <a href="l4-higher-education" >Higher education</a>
-          </h2>
-          <p class="dfeuk-card__description">Higher eduction is the name for qualifications and courses you can take after 18. It includes diplomas, foundation years, bachelor degrees and more.</p>
-       </div>
-    </div>
-  </li>
-  </ul>
+
+            <div class="govuk-grid-column-one-quarter">
+            <p class="govuk-body"><strong>Cost:</strong></p>
+            <p class="govuk-body">Informal with no qualification</p>
+            </div>
+
+            <div class="govuk-grid-column-one-quarter">
+               <p class="govuk-body"><strong>How long they take:</strong></p>
+               <p class="govuk-body">Informal with no qualification</p>
+               </div>
+
+               <div class="govuk-grid-column-one-quarter">
+               <p class="govuk-body"><strong>Benefits:</strong></p>
+               <p class="govuk-body">They help you to secure and sustain employment through learning in the workplace, with support from a qualified job coach. </p>
+               </div>
+
+               <div class="govuk-grid-column-full">
+               <hr>
+               </div>
+     </div>
 
 
 
-
-
-
-
-   <h2 id="work" class="govuk-heading-m">
-    Work
-   </h2>
 
   
+      <div class="govuk-grid-column-full">
+         <h2 class="govuk-link"><a href="l4-apprenticeships">Apprenticeships</a></h2>
+         <p class="govuk-body">Apprenticeships are real jobs that allow you to earn a wage while you learn. They can take between 1 and 5 years to complete, depending on the level.
+         </p>
+
+         <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>Qualification Level:</strong></p>
+         <p class="govuk-body">Level 2 to Level 7 (degree apprenticeship)</p>
+         </div>
+
+            <div class="govuk-grid-column-one-quarter">
+            <p class="govuk-body"><strong>Cost:</strong></p>
+            <p class="govuk-body">You are paid the apprentice or national minimum wage depending on age</p>
+            </div>
+
+            <div class="govuk-grid-column-one-quarter">
+               <p class="govuk-body"><strong>How long they take:</strong></p>
+               <p class="govuk-body">1 to 5 years depending on the level</p>
+               </div>
+
+               <div class="govuk-grid-column-one-quarter">
+               <p class="govuk-body"><strong>Benefits:</strong></p>
+               <p class="govuk-body">You work with experienced staff and learn skills relevant to your chosen profession, and get time for training or study during the working week (at least 20% of your normal working hours) </p>
+               </div>
+
+               <div class="govuk-grid-column-full">
+               <hr>
+               </div>
+     </div>
+
+
+
+
+
+
+
    
+  <div class="govuk-grid-column-full">
+   <h2 class="govuk-link"><a href="l4-htqs">Higher Technical Qualifications (HTQs) </a></h2>
+   <p class="govuk-body">For adults aged 18 and over, Higher Technical Qualifications (HTQs) are technical qualifications that employers have helped develop so you can get the right training and skills you need to succeed at work.
+   </p>
 
- 
+   <div class="govuk-grid-column-one-quarter">
+   <p class="govuk-body"><strong>Qualification Level:</strong></p>
+   <p class="govuk-body">Level 4 and 5</p>
+   </div>
 
-
-
-   <ul class="dfeuk-grid-row dfeuk-card-group">
-    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-       <div class="dfeuk-card dfeuk-card--clickable">
-          <div class="dfeuk-card__content">
-             <h2 class="dfeuk-card__heading dfeuk-heading-m">
-                <a href="l4-supported-internships" >Supported internships if you have an education, health and care plan</a>
-             </h2>
-             <p class="dfeuk-card__description">Supported internships are an unpaid work-based study programme that usually lasts for one year. It includes an extended work placement that lasts for at least 6 months.</p>
-          </div>
-       </div>
-    </li> 
-  
-    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-      <div class="dfeuk-card dfeuk-card--clickable">
-         <div class="dfeuk-card__content">
-            <h2 class="dfeuk-card__heading dfeuk-heading-m">
-               <a href="l4-school-leavers" >School leaver schemes</a>
-            </h2>
-            <p class="dfeuk-card__description">School leavers scheme is offered by some companies to young people who have completed A levels. The schemes allow you to learn and train with a large company while earning a wage.</p>
-         </div>
+      <div class="govuk-grid-column-one-quarter">
+      <p class="govuk-body"><strong>Cost:</strong></p>
+      <p class="govuk-body">Cost can vary depending on the course studied</p>
       </div>
-   </li>
-   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
-    <div class="dfeuk-card dfeuk-card--clickable">
-       <div class="dfeuk-card__content">
-          <h2 class="dfeuk-card__heading dfeuk-heading-m">
-             <a href="l4-find-a-job" >Find a job</a>
-          </h2>
-          <p class="dfeuk-card__description">Find full or part-time work using the Find a job service to search and apply for jobs in England, Scotland and Wales.</p>
-       </div>
-    </div>
-  </li>
-  </ul>
 
+      <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>How long they take:</strong></p>
+         <p class="govuk-body">1 to 2 years</p>
+         </div>
 
+         <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>Benefits:</strong></p>
+         <p class="govuk-body">They help you develop the right knowledge, skills and behaviors employers need. </p>
+         </div>
 
-
-
-    
- 
-
-
-  </div>
+         <div class="govuk-grid-column-full">
+         <hr>
+         </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<div class="govuk-grid-column-full">
+   <h2 class="govuk-link"><a href="l4-alevels">A levels</a></h2>
+   <p class="govuk-body">For those aged 16 and over, A levels are subject-based qualifications usually assessed by exams. They can lead to further study, training or work.
+   </p>
+
+   <div class="govuk-grid-column-one-quarter">
+   <p class="govuk-body"><strong>Qualification Level:</strong></p>
+   <p class="govuk-body">Level 3</p>
+   </div>
+
+      <div class="govuk-grid-column-one-quarter">
+      <p class="govuk-body"><strong>Cost:</strong></p>
+      <p class="govuk-body">Free</p>
+      </div>
+
+      <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>How long they take:</strong></p>
+         <p class="govuk-body">2 years</p>
+         </div>
+
+         <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>Benefits:</strong></p>
+         <p class="govuk-body">They help you develop skills needed in particular subject areas and allow you to move  on to an apprenticeship, join a school leavers scheme, find another type of higher education or go straight into employment. </p>
+         </div>
+
+         <div class="govuk-grid-column-full">
+         <hr>
+         </div>
+</div>
+
+
+
+
+
+
+ 
+<div class="govuk-grid-column-full">
+   <h2 class="govuk-link"><a href="l4-higher-education">Higher education</a></h2>
+   <p class="govuk-body">Higher education is the name for qualifications and courses you can take after 18. It includes diplomas, foundation years, bachelor degrees and more.
+   </p>
+
+   <div class="govuk-grid-column-one-quarter">
+   <p class="govuk-body"><strong>Qualification Level:</strong></p>
+   <p class="govuk-body">Level 4 to 7</p>
+   </div>
+
+      <div class="govuk-grid-column-one-quarter">
+      <p class="govuk-body"><strong>Cost:</strong></p>
+      <p class="govuk-body">Cost can vary depending on the course studied</p>
+      </div>
+
+      <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>How long they take:</strong></p>
+         <p class="govuk-body">3 to 5 years</p>
+         </div>
+
+         <div class="govuk-grid-column-one-quarter">
+         <p class="govuk-body"><strong>Benefits:</strong></p>
+         <p class="govuk-body">Widens your options and gives you the skills you need for many different jobs and careers sometimes in specialist sectors.</p>
+         </div>
+
+         <div class="govuk-grid-column-full">
+         <hr>
+         </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      </div>
+
 
 {% endblock %}

@@ -1,0 +1,270 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      Choices to retrain and find work
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+ 
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Choices to retrain and find work
+    </h1>
+
+    <p class="govuk-body-l">Explore what you could do next</p>
+
+    <p class="govuk-body">Information about the different choices you can make, from courses to jobs.       </p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+         <a href="#work">Work</a>   
+      </li>
+      <li>
+         <a href="#combine">Combine work and study 
+      </li>
+      <li>
+         <a href="#study">Study</a> 
+      </li>
+    </ul>
+    
+
+
+  </div>
+  </div>
+
+
+  <div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+
+    <h2 id="work" class="govuk-heading-m">
+      Work
+     </h2>
+  
+    
+     
+  
+   
+  
+  
+  
+     <ul class="dfeuk-grid-row dfeuk-card-group">
+      <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+         <div class="dfeuk-card dfeuk-card--clickable">
+            <div class="dfeuk-card__content">
+               <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                  <a href="l4-find-a-job" >Find a job</a>
+               </h2>
+               <p class="dfeuk-card__description">Find full or part-time work using the Find A Job service to search and apply for jobs in England, Scotland and Wales.</p>
+            </div>
+         </div>
+      </li>
+    
+      <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+        <div class="dfeuk-card dfeuk-card--clickable">
+           <div class="dfeuk-card__content">
+              <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                 <a href="l4-supported-internships" >Supported internships if you have an education, health and care plan</a>
+              </h2>
+              <p class="dfeuk-card__description">Supported internships are an unpaid work-based study programme that usually lasts for one year. It includes an extended work placement that lasts for at least 6 months.</p>
+           </div>
+        </div>
+     </li>
+    </ul>
+  
+  
+
+
+
+
+
+
+
+    <h2 id="combine"class="govuk-heading-m">
+      Combine work and study
+   </h2>
+
+
+
+
+
+
+   <ul class="dfeuk-grid-row dfeuk-card-group">
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+       <div class="dfeuk-card dfeuk-card--clickable">
+          <div class="dfeuk-card__content">
+             <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                <a href="l4-apprenticeships" >Apprenticeships</a>
+             </h2>
+             <p class="dfeuk-card__description">Apprenticeships are real jobs that allow you to earn a wage while you learn. They can take between 1 and 5 years to complete, depending on the level.</p>
+          </div>
+       </div>
+    </li>
+  
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-skills-bootcamps" >Skills Bootcamps</a>
+            </h2>
+            <p class="dfeuk-card__description">Free flexible training courses for adults to develop specific skills in digital, technical, construction and green sectors, with a guaranteed job interview at the end.</p>
+         </div>
+      </div>
+   </li>
+  </ul>
+
+
+
+
+
+   <h2 id="study"class="govuk-heading-m">
+    Study
+   </h2>
+
+
+
+
+
+
+
+   <ul class="dfeuk-grid-row dfeuk-card-group">
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+       <div class="dfeuk-card dfeuk-card--clickable">
+          <div class="dfeuk-card__content">
+             <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                <a href="l4-htqs" >Higher Technical Qualifications (HTQs)</a>
+             </h2>
+             <p class="dfeuk-card__description">Higher Technical Qualifications (HTQs) are technical qualifications that employers have helped develop so you can get the right training and skills you need to succeed at work.</p>
+          </div>
+       </div>
+    </li>
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-multiply" >Multiply</a>
+            </h2>
+            <p class="dfeuk-card__description">Improving your numeracy could help you in your everyday life, from budgeting money to finding a new job.</p>
+         </div>
+      </div>
+    </li>
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-free-courses" >Free courses for jobs</a>
+            </h2>
+            <p class="dfeuk-card__description">Hundreds of free courses available for those aged 19 and over, across different sectors, from accounting or construction to courses in early years, digital, catering, adult care and more.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-digital-essentials" >Digital essential skills</a>
+            </h2>
+            <p class="dfeuk-card__description">Free Digital Essential skills qualifications to develop the essential digital skills needed for work and everyday life.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-english-essentials" >English essential skills</a>
+            </h2>
+            <p class="dfeuk-card__description">Taking a free English essential skills course can improve your communication skills, helping you progress in work and everyday life.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-numeracy-essentials" >Numeracy essential skills</a>
+            </h2>
+            <p class="dfeuk-card__description">These courses will help you gain the numeracy skills you need for work and everyday life and are recognised by employers.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-skills-toolkit" >The Skills Toolkit</a>
+            </h2>
+            <p class="dfeuk-card__description">Flexible courses open to everyone to boost your skills at your own pace in digital, numeracy and transferable skills.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-alevels" >A levels</a>
+            </h2>
+            <p class="dfeuk-card__description">A levels are subject-based qualifications usually assessed by exams. They can lead to further study, training or work.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l4-higher-education" >Higher education</a>
+          </h2>
+          <p class="dfeuk-card__description">Higher eduction is the name for qualifications and courses you can take after 18. It includes diplomas, foundation years, bachelor degrees and more.</p>
+       </div>
+    </div>
+  </li>
+  </ul>
+
+
+
+
+
+
+
+   
+
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}
