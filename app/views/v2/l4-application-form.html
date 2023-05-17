@@ -1,0 +1,231 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l3-help-with-applying">Help with applying for jobs and training</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          How to complete an application form 
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      How to complete an application form 
+    </h1>
+
+    <h2 class="govuk-heading-l">
+      What is an application form? 
+    </h2>
+
+    <p class="govuk-body">An application form is an official way to apply for a job or training through a company. 
+    </p>
+
+      <p class="govuk-body">The purpose of the form is to ask specific information about you so that you can demonstrate why you would be a good candidate.  
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Before you start an application
+      </h2>
+
+      <p class="govuk-body">Before you start an application it is important to have ready: 
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          your recent work history, training and qualifications ready to write down       
+        </li>
+        <li>
+          a list of tasks and responsibilities you had during those roles      
+        </li>
+        <li>
+          your right to work ID/documents (this might be things like your National Insurance number and passport details)     
+        </li>
+
+      </ul>
+
+      <p class="govuk-body">If you have an updated CV, then you could use this to help you complete some of the application. 
+      </p>
+
+
+    <h2 class="govuk-heading-m">
+      Personal information
+   </h2>
+
+    <p class="govuk-body">You will be asked to provide some personal information on an application form. 
+      This usually includes your contact details, address and date of birth. 
+      </p>
+
+    <p class="govuk-body">Make sure you use an email address and/or telephone number you can be reached on easily. 
+    </p>
+
+    <p class="govuk-body">The form may ask you for personal information that is relevant to the job or training you are applying for. 
+    </p>
+
+    <p class="govuk-body">For example: to be a delivery van driver, you'll need a licence for the vehicle you'll be driving and a good driving record. In this instance you would probably be required to provide details of your driving licence. 
+    </p>
+
+    <p class="govuk-body">The application form may also ask you to include a few sentences to introduce yourself and the type of work or training you are looking for and the reasons why. 
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Work history
+   </h2>
+
+   <p class="govuk-body">In this section you should include the details of the paid jobs you have done and the responsibilities you had during them.
+  </p>
+
+  <p class="govuk-body">If you don’t have a lot of work experience you can include placements and any volunteering you’ve have done.
+  </p>
+
+  <p class="govuk-body">You should list these with the most recent first, and include:
+  </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        the employer details     
+      </li>
+      <li>
+        the job title    
+      </li>
+      <li>
+        the dates you worked there    
+      </li>
+      <li>
+        what you did, usually in 2 to 3 sentences 
+      </li>
+    </ul>
+
+  <p class="govuk-body">Remember to specifically include experience that is relevant to the job or training area you want to apply for. 
+  </p>
+
+  <p class="govuk-body">Try to match the words you use to the keywords in the job advert or training description. This will make it easier for the person reading your CV to identify that you are a good candidate  for the role. 
+  </p>
+
+
+  <h2 class="govuk-heading-m">
+    Education and training
+ </h2>
+
+   <p class="govuk-body">In this section you should include:
+   </p>
+
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      names of your qualifications (for example: GCSEs in Maths, English and Science)     
+    </li>
+    <li>
+      school, college or university where you studied    
+    </li>
+  </ul>
+
+
+ <p class="govuk-body">You may be asked to include the dates you attended, your grades or predicted grades in the application, if this is specific to the job, training or study you want to do next.  
+</p>
+
+<h2 class="govuk-heading-m">
+  References
+</h2>
+
+<p class="govuk-body">The application may ask for a ‘reference’ to enquire about your previous work experience or training. 
+</p>
+
+<p class="govuk-body">A good reference is someone who is willing to discuss this with a potential employer or training provider. They should have worked with you directly, such as a manager or trainer, and be able to talk positively about you. 
+</p>
+
+<p class="govuk-body">If you need a reference and you don’t have much work experience or you have recently finished education, you could ask: 
+</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        a teacher or college tutor who knows you well      
+      </li>
+      <li>
+        a team leader from a volunteering group, a society or sports team
+      </li>
+      <li>
+        someone respected in your community    
+      </li>
+    </ul>
+
+
+    <h2 class="govuk-heading-m">
+      Before you submit your application
+   </h2>
+  
+
+
+
+
+    <p class="govuk-body">Before you submit your application remember to read through your answers and check the spelling and grammar.
+    </p>
+
+    <p class="govuk-body">Make sure you complete the form before the closing date. This is usually stated on the job advert or on the application itself.  
+    </p>
+
+    <p class="govuk-body">Keep a copy of your application for future roles and to refer back to if you are invited to interview. 
+    </p>
+
+    <h2 class="govuk-heading-m">
+      After you submit your application
+   </h2>
+
+    <p class="govuk-body">After you have submitted your application the recruiter will be in touch with you to let you know if you have been selected for an interview. 
+    </p>
+
+
+    <p class="govuk-body">However, you might not get a response from every role that you apply for. 
+    </p>
+
+    <p class="govuk-body">It is normal to apply for a number of different roles before being shortlisted for an interview. 
+    </p>
+
+
+   <p class="govuk-body">This may feel disappointing but it is a good opportunity to develop your experience and get feedback from potential employers and trainers about how you can improve in future applications. 
+  </p>
+
+  <p class="govuk-body">If you need further support on applications you can talk to a Career adviser at the <a href="https://nationalcareers.service.gov.uk/contact-us">National Careers Service.</a>  </p>
+
+   
+  
+ 
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

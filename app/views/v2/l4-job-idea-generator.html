@@ -1,0 +1,69 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="L3-explore">Explore different careers</a>
+     </li>
+     <li class="govuk-breadcrumbs__list-item">
+      Job idea generator
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Job idea generator
+    </h1>
+
+    <p class="govuk-body-l">Answer these quick questions to start thinking about your next step. </p>
+
+    <p class="govuk-body">We’ll show you some Job ideas and useful information based on what you’ve told us. </p>
+
+    <p class="govuk-body">This information aims to gets you thinking about different career options that may suit you.</p>
+
+    <p class="govuk-body"><strong>The questions will take about 5 minutes to complete</strong></p>
+
+ 
+<div class="govuk-!-margin-top-7">
+
+    <a href="jig-1" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+      Start now
+      <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+      </svg></a>
+
+</div>
+
+
+  </div>
+</div>
+
+{% endblock %}

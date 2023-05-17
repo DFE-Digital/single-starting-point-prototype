@@ -1,0 +1,128 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+         The Skills Toolkit
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      The Skills Toolkit
+    </h1>
+
+    <p class="govuk-body-l">Flexible courses open to everyone to boost your skills at your own pace in digital, numeracy and transferable skills.</p>
+
+    <h2 class="govuk-heading-m">
+      What is the Skills Toolkit?
+   </h2>
+
+    <p class="govuk-body">The Skills Toolkit are free online courses which range from quick 20-minute refreshers to longer courses of a few weeks.  </p>
+
+    <p class="govuk-body">All the courses are online and flexible, so you can learn around your other commitments and at your own pace.</p>
+
+    <p class="govuk-body">Subjects include:</p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Digital skills – from getting to grips with using computers to more advanced courses in digital marketing, coding, or computer science      
+      </li>
+      <li>
+        Numeracy skills – including practical maths or introductions to bookkeeping  
+      </li>
+      <li>
+        Transferable skills – from presentation or leadership skills to courses on resilience and wellbeing 
+      </li>
+    </ul>
+
+    <p class="govuk-body">Digital, numeracy and transferable skills, like communicating confidently or handling stressful situations, are some of the most sought-after by employers.  </p>
+
+    <p class="govuk-body">Using the Skills Toolkit could help you build up your skills, boost your CV and progress in work.  </p>
+
+
+    <h2 class="govuk-heading-m">
+      Who is the Skills Toolkit for?
+     </h2>
+
+   <p class="govuk-body">The skills toolkit is free and available to all ages whether:</p>
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      you’re out of work
+    </li>
+    <li>
+      thinking about changing jobs   
+    </li>
+    <li>
+      have just graduated
+    </li>
+    <li>
+      keen to keep your mind healthy and busy
+    </li>
+  </ul>
+
+   <h2 class="govuk-heading-m">
+    Where can I do a Skills Toolkit course? 
+   </h2>
+
+   <p class="govuk-body">All the courses are online and flexible, so you can learn around your other commitments and at your own pace.  </p>
+
+
+
+   <h2 class="govuk-heading-m">
+    Find a Skills Toolkit course
+  </h2>
+
+   <p class="govuk-body">Visit The Skills Toolkit to find a free, online course for you. </p>
+
+   <p class="govuk-body">You could also view a<a href="https://amazingapprenticeships.com/higher-degree-listing/">list of all higher and degree apprenticeships </a>that are available both now and in the future. </p>
+
+   
+ 
+   <button class="govuk-button" data-module="govuk-button">
+    View the Skills Toolkit
+  </button>
+
+  
+
+
+
+
+  </div>
+</div>
+
+{% endblock %}

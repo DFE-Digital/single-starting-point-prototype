@@ -1,0 +1,129 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+         A levels
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      A levels
+    </h1>
+
+    <p class="govuk-body-l">A levels can lead to further study, training or work, with more than 40 different subjects to choose from. </p>
+
+
+    <h2 class="govuk-heading-m">
+      What are A levels?
+   </h2>
+
+    <p class="govuk-body">A levels are subject-based qualifications usually assessed by exams. </p>
+
+    <p class="govuk-body">To decide which subjects to take at A level, you should consider which subjects:</p>
+
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        you're good at or would be interested in    
+      </li>
+      <li>
+        you might need for a certain job or further study after A levels  
+      </li>
+      <li>
+        will help you keep your options open if you’re not sure what you want to do in the future
+      </li>
+    </ul>
+
+    <p class="govuk-body">You usually study A levels over 2 years. Most students choose 3 subjects to study but you can take more or fewer.  </p>
+
+    <p class="govuk-body">You can also study for a BTEC or other qualification at the same time.</p>
+
+    <p class="govuk-body">After you have finished your A levels you can do an apprenticeship, join a school leavers scheme, find another type of higher education or go straight into employment. </p>
+
+
+    <h2 class="govuk-heading-m">
+      Who can take A levels?
+     </h2>
+
+   <p class="govuk-body">You normally need at least: </p>
+
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      5 GCSEs at grades 9 to 4
+    </li>
+    <li>
+      grade 6 in the subjects you want to study     
+    </li>
+  </ul>
+   
+
+  <p class="govuk-body">You should check with the school or college where you’d like to study to find out exactly what you’ll need. </p>
+
+
+   <h2 class="govuk-heading-m">
+    Where can I do A levels?
+   </h2>
+
+   <p class="govuk-body">A levels are usually offered at schools, sixth-forms and colleges.</p>
+
+
+
+   <h2 class="govuk-heading-m">
+    Find A level courses
+  </h2>
+
+   <p class="govuk-body">You can search for colleges and schools currently offering A level courses to find out where your nearest one is.  </p>
+
+
+
+ 
+   <button class="govuk-button" data-module="govuk-button">
+    Find A level courses
+  </button>
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

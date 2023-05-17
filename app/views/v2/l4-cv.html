@@ -1,0 +1,234 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l3-help-with-applying">Help with applying for jobs and training</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          How to write a CV
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      How to write a CV
+    </h1>
+
+  
+    <h2 class="govuk-heading-l">
+      What is a CV?
+    </h2>
+
+    <p class="govuk-body">A CV is a document of your work history, training, education, and personal experience. 
+    </p>
+
+      <p class="govuk-body">You can use this as a way to demonstrate to employers how you are suitable for a role. 
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Before you start writing a CV
+      </h2>
+
+      <p class="govuk-body">Before you start an application it is important to have ready: 
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          your recent work history, training and qualifications ready to write down        
+        </li>
+        <li>
+          think about the tasks and responsibilities you had during those roles      
+        </li>
+      </ul>
+
+
+      <h2 class="govuk-heading-l">
+        If you know what job or training you want to do 
+      </h2>
+
+      <p class="govuk-body">If you know the type of job or training you want to apply for, it might be useful to use the <a href="https://nationalcareers.service.gov.uk/explore-careers">career profiles</a>. 
+      </p>
+
+      <p class="govuk-body">You can use them to see what strengths and knowledge are needed and think about how your experience fits with that area.   
+      </p>
+
+      <p class="govuk-body">Remember, a CV is personal to you and the type of job or training you apply for, so you can adapt it.   
+      </p>
+
+      <h2 class="govuk-heading-l">
+        Style of the CV
+      </h2>
+
+      <p class="govuk-body">It is important to layout the details of your experience in a clear way, to make it easier for potential employers or trainers to understand. 
+      </p>
+
+      <p class="govuk-body">When creating your CV remember to: 
+      </p>
+
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          be clear and to the point and keep it to around 2 pages   
+        </li>
+        <li>
+          use a simple font and keep it the same style throughout the CV  
+        </li>
+        <li>
+          use headings, bullet points and spacing to break information up to make it easier to read  
+        </li>
+        <li>
+          get someone else to read it, and double check your spelling and grammar
+        </li>
+        <li>
+          make sure you save a copy 
+        </li>
+      </ul>
+
+
+    <h2 class="govuk-heading-m">
+      Introduction and contact details
+   </h2>
+
+    <p class="govuk-body">Make sure you put your name at the top of the CV so that the person reading it knows who it belongs to.  
+    </p>
+
+    <p class="govuk-body">Don't forget to include your contact details. This is usually an email address and/or telephone number you can be reached on easily. 
+    </p>
+
+    <p class="govuk-body">You don't necessarily need to include your address, date of birth or driving licence status unless specific to the job or training that you are applying for. 
+    </p>
+
+    <p class="govuk-body">For example: to be a delivery van driver, you'll need a licence for the vehicle you'll be driving and a good driving record. 
+    </p>
+
+    <p class="govuk-body">Remember to include a few sentences to introduce yourself and the type of work or training you are looking for and the reasons why. 
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Work history
+   </h2>
+
+   <p class="govuk-body">In this section you should include the details of the paid jobs you have done and the responsibilities you had during them.
+  </p>
+
+  <p class="govuk-body">If you don’t have a lot of work experience you can include placements and any volunteering you’ve have done.
+  </p>
+
+  <p class="govuk-body">You should list these with the most recent first, and include:
+  </p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        the employer details     
+      </li>
+      <li>
+        the job title    
+      </li>
+      <li>
+        the dates you worked there    
+      </li>
+      <li>
+        what you did, usually in 2 to 3 sentences 
+      </li>
+    </ul>
+
+  <p class="govuk-body">Remember to specifically include experience that is relevant to the job or training area you want to apply for. 
+  </p>
+
+  <p class="govuk-body">Try to match the words you use to the keywords in the job advert or training description. This will make it easier for the person reading your CV to identify that you are a good candidate  for the role. 
+  </p>
+
+
+  <h2 class="govuk-heading-m">
+    Education and training
+ </h2>
+
+ <p class="govuk-body">You can use this section before or instead of ‘‘work history’ if you don’t have a lot of work experience or you have recently finished school or training. 
+</p>
+
+   <p class="govuk-body">In this section you should include:
+   </p>
+
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      names of your qualifications (for example: GCSEs in Maths, English and Science)     
+    </li>
+    <li>
+      school, college or university where you studied    
+    </li>
+  </ul>
+
+
+ <p class="govuk-body">You may wish to include the dates you attended, your grades or predicted grades on your CV, if this is specific to the job, training or study you want to do next.  
+</p>
+
+<h2 class="govuk-heading-m">
+  Other things you may want to include in your CV 
+</h2>
+
+<p class="govuk-body">You may want to include a sentence in your CV about references, but you shouldn’t include someone else’s contact details. 
+</p>
+
+<p class="govuk-body">Instead you can say that “References are available on request”, but remember to think about who you might use as a reference if they are requested. Your current or previous employer will usually provide you with a work reference.  
+</p>
+
+<p class="govuk-body">If you need a reference and you don't have much work experience or you have recently finished education, you could ask: 
+</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        a teacher or college tutor who knows you well      
+      </li>
+      <li>
+        a team leader from a volunteering group, a society or sports team
+      </li>
+      <li>
+        someone respected in your community (for example a leader from your place of worship)    
+      </li>
+    </ul>
+
+
+    <p class="govuk-body">You can include your hobbies and interests on your CV, if they are applicable to the job or training you are applying for to demonstrate why you should be considered.   
+    </p>
+
+    <p class="govuk-body">For example if you are a captain for a sports team you could demonstrate leadership, team work and organisation.   
+    </p>
+
+    <p class="govuk-body">If you need further support on your CV you can get it reviewed by a Career adviser at the <a href="https://nationalcareers.service.gov.uk/contact-us">National Careers Service.</a>  
+    </p>
+
+
+
+  </div>
+</div>
+
+{% endblock %}

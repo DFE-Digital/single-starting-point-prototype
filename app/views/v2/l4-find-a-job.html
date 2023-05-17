@@ -1,0 +1,65 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+      <li class="govuk-breadcrumbs__list-item">
+        Find a job
+       </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Find a job
+    </h1>
+
+    <p class="govuk-body-l">Search for and find full or part-time jobs in England, Scotland and Wales.</p>
+
+  
+
+ 
+   <button class="govuk-button" data-module="govuk-button">
+    Find a job
+  </button>
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

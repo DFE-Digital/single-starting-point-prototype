@@ -1,0 +1,137 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      National Apprenticeship Week
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      National Apprenticeship Week 2023
+    </h1>
+    <p class="govuk-body-l">National Apprenticeship Week 2023 is a week-long celebration of apprenticeships across England.</div>
+
+
+
+    <div class="govuk-!-margin-bottom-7 govuk-grid-column-one-third ">
+      <img class="dfeuk-image__img" src="/public/images/skills-for-life-logo.png" alt="skills for life logo">
+   </div>
+</div>
+
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-half">
+ 
+      <img width="100%" class="dfeuk-image__img" src="/public/images/naw.png" alt="a tacher and two apprentices looking at data on the computer">
+     </div>
+ 
+ 
+ 
+     <div class="govuk-!-margin-bottom-7 govuk-grid-column-one-half ">
+      <p class="govuk-body">The week brings together businesses and apprentices across the country to shine a light on the positive impact that apprenticeships make to individuals, businesses and the wider economy.</p>
+         
+         
+         <h2 class="govuk-heading-m"> Skills For Life</h2>
+
+
+
+         <p class="govuk-body">The theme for National Apprenticeship Week 2023 is "Skills for Life"; reflecting on how apprenticeships can help individuals to develop the skills and knowledge required for a rewarding career, and businesses to develop a talented workforce that is equipped with future-ready skills.</p>
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+<hr>
+
+      <h2 class="govuk-heading-l">
+         More options
+     </h2>
+
+
+<ul class="dfeuk-grid-row dfeuk-card-group">
+
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+       <img class="dfeuk-card__img" src="/public/images/apprenticeships-page.png" alt="two people looking at a robotic arm">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-apprenticeships" >What is an apprenticeship</a>
+            </h2>
+            <p class="dfeuk-card__description">Apprenticeships are real jobs that allow you to earn a wage while you learn. They can take between 1 and 5 years to complete, depending on the level.</p>
+         </div>
+      </div>
+    </li>
+
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/apprenticeships.png" alt="a screenshot of the gov page for find an apprenticeship">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="https://www.gov.uk/apply-apprenticeship" >Find an apprenticeship</a>
+          </h2>
+          <p class="dfeuk-card__description">You can search and apply for all apprenticeships available now in England on GOV.UK.</p>
+       </div>
+    </div>
+ </li>
+
+ <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+   <div class="dfeuk-card dfeuk-card--clickable">
+    <img class="dfeuk-card__img" src="/public/images/yp-choices-school.png" alt="a student smiling in a library">
+      <div class="dfeuk-card__content">
+         <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            <a href="l3-options-school" >Options after leaving school and education</a>
+         </h2>
+         <p class="dfeuk-card__description">Explore what you could do next</p>
+      </div>
+   </div>
+</li>
+
+</ul>
+ 
+
+
+
+
+
+   
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

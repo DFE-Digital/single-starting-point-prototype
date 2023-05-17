@@ -1,0 +1,131 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+         Digital essential skills
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Digital essential skills
+    </h1>
+
+    <p class="govuk-body-l">Free Digital Essential skills qualifications to develop the essential digital skills needed for work and everyday life.</p>
+
+    <h2 class="govuk-heading-m">
+      What are digital essential skills?
+   </h2>
+
+    <p class="govuk-body">If you’re aged 19 or over and have little or no experience using computers and other digital devices or have low digital skills, you can study an Digital Essential Skills qualification for free. </p>
+
+    <p class="govuk-body">These courses will give you the essential digital understanding you need for work and everyday life, such as using a computer or other digital devices, and staying safe online. </p>
+
+    <p class="govuk-body">The qualifications are for those with little or no experience of using digital devices and cover essential areas including: </p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        how to handle information securely    
+      </li>
+      <li>
+        how to create and edit digital documents
+      </li>
+      <li>
+        how to successfully communicate online 
+      </li>
+      <li>
+        how to register for online services and carry out online transactions 
+      </li>
+      <li>
+        how to stay safe and responsible online
+      </li>
+    </ul>
+
+
+
+    <h2 class="govuk-heading-m">
+      Who can take a digital essential skills course?
+   </h2>
+
+   <p class="govuk-body">Courses are free and for adults aged 19 and over, who do not have the essential digital skills needed for work and everyday life. </p>
+
+
+
+   <h2 class="govuk-heading-m">
+    Where can I find a digital essential skills course?
+ </h2>
+
+ <p class="govuk-body">Courses are flexible and can be classroom-based or online.  </p>
+
+ <p class="govuk-body">Depending on your local provider, full-time, part-time and evening class options may also be available.  </p>
+
+
+
+ <h2 class="govuk-heading-m">
+  Find an essential skills course
+</h2>
+
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Use Find a Course to find the right qualification for you   
+      </li>
+      <li>
+        Contact the provider of the course to apply.
+      </li>
+    </ul>
+
+
+    <p class="govuk-body">You can also contact your local authority or college to find out more about opportunities in your area. </p>
+
+
+ 
+   <button class="govuk-button" data-module="govuk-button">
+    Find a Course
+  </button>
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

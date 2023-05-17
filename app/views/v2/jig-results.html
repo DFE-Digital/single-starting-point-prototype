@@ -1,0 +1,208 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<a href="l4-job-idea-generator" class="govuk-back-link">Back</a>
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="L3-explore">Explore different careers</a>
+     </li>
+     <li class="govuk-breadcrumbs__list-item">
+      Job idea generator
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+                <h1 class="govuk-header-xl">
+                  Results
+                </h1>
+
+
+
+      </div>
+    </div>
+
+    <h2 class="govuk-header-l">You told us that</h2>
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+      <p class="govuk-body"> You're doing A levels</p>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <p class="govuk-body"> <a href="jig-1">Change</a></p>
+        </div>
+        </div>
+        <hr class="govuk-!-margin-top-2">
+
+        <div class="govuk-grid-row ">
+          <div class="govuk-grid-column-one-third">
+        <p class="govuk-body"> You're considering university</p>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <p class="govuk-body"> <a href="jig-2">Change</a></p>
+          </div>
+          </div>
+          <hr class="govuk-!-margin-top-2">
+
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+          <p class="govuk-body"> You want to work outside</p>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <p class="govuk-body"> <a href="jig-3">Change</a></p>
+            </div>
+            </div>
+            <hr class="govuk-!-margin-top-2">
+
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-third">
+            <p class="govuk-body"> You enjoy maths, art and design  and computing </p>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <p class="govuk-body"> <a href="jig-4">Change</a></p>
+              </div>
+              </div>
+              <hr class="govuk-!-margin-top-2">
+
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-third">
+              <p class="govuk-body"> You’re good at creativity, using your initiative and maths </p>
+              </div>
+              <div class="govuk-grid-column-one-half">
+                <p class="govuk-body"> <a href="jig-5">Change</a></p>
+                </div>
+                </div>
+                <hr class="govuk-!-margin-top-2">
+
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-third">
+                <p class="govuk-body"> You have no idea what job you want </p>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <p class="govuk-body"> <a href="jig-6">Change</a></p>
+                  </div>
+                  </div>
+                  <hr class="govuk-!-margin-top-2">
+             
+            
+ <h2 class="govuk-header-l">You might want to explore these job categories</h2>
+
+ <ul class="dfeuk-grid-row dfeuk-card-group">
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+     <div class="dfeuk-card dfeuk-card--clickable">
+        <div class="dfeuk-card__content">
+           <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="https://nationalcareers.service.gov.uk/job-categories/creative-and-media" >Creative and media</a>
+           </h2>
+           <p class="dfeuk-card__description">Suggested because you said you are <strong>creative</strong> and <strong>use your initiative</strong></p>
+           <p class="dfeuk-card__description"><a href="">This isn't for me</a></p>
+          </div>
+     </div>
+  </li>
+
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="https://nationalcareers.service.gov.uk/job-categories/hospitality-and-food" >Hospitality and food</a>
+          </h2>
+          <p class="dfeuk-card__description">Suggested because you said you <strong>use your initiative</strong> and <strong>work well under pressure</strong></p>
+          <p class="dfeuk-card__description"><a href="">This isn't for me</a></p>
+         </div>
+    </div>
+ </li>
+
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+     <div class="dfeuk-card dfeuk-card--clickable">
+        <div class="dfeuk-card__content">
+           <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="https://nationalcareers.service.gov.uk/job-categories/delivery-and-storage" >Delivery and storage</a>
+           </h2>
+           <p class="dfeuk-card__description">Suggested because you said you are <strong>good at organisation</strong> and <strong>liked geography</strong></p>
+           <p class="dfeuk-card__description"><a href="">This isn't for me</a></p>
+          </div>
+     </div>
+  </li>
+</ul>
+         
+<hr>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+<h2 class="govuk-header-l">Here are some articles and stories you might find useful:</h2>
+
+<h3 class="govuk-header-m govuk-!-margin-top-7">Education and training you might not have considered</h3>
+
+<p class="govuk-body">Whether you know where you're headed in the future or not, knowing the work and study choices available to you is a great place to start.</p>
+
+<p class="govuk-body"><a href="l3-options-school">Options after leaving school and education</a></p>
+
+
+<h3 class="govuk-header-m govuk-!-margin-top-7">Talk to a careers adviser</h3>
+
+<p class="govuk-body">Wherever you are with your decisions, you can call us on <a href="">0800 100 900</a> during our opening times.</p>
+
+<p class="govuk-body"> You can also use <a href="">webchat</a> to talk online.</p>
+
+
+<h3 class="govuk-header-m govuk-!-margin-top-7">Want a more in depth report?</h3>
+
+<p class="govuk-body"> <a href="https://nationalcareers.service.gov.uk/discover-your-skills-and-careers/">Try our Discover and Explore your Careers tool.</a> This assessment:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>
+    contains fewer than 50 multiple-choice questions     
+  </li>
+  <li>
+    takes 5 to 10 minutes to complete
+  </li>
+</ul>
+
+      </div>
+    </div>
+
+
+      </div>
+    </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+  </div>
+
+{% endblock %}
+
+
+
+
+
+
+

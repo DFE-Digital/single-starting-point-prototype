@@ -1,0 +1,143 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+         T Levels
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      T levels
+    </h1>
+
+    <p class="govuk-body-l">A T Level is a nationally-recognised qualification for 16 to 19-year-olds that takes 2 years to complete. </p>
+
+    <p class="govuk-body-l">Leading businesses and employers helped design T Levels to give you the knowledge and skills you need.  </p>
+
+
+    <h2 class="govuk-heading-m">
+      What is a T level?
+   </h2>
+
+    <p class="govuk-body">You’ll spend 80% of your time in the classroom and 20% on a minimum 9-week placement with an employer. This means you’ll learn what a real career is like while you continue your studies. </p>
+
+    <p class="govuk-body">There are many different subjects available now in England, including digital, science, construction and health.</p>
+
+    <p class="govuk-body">These are some of the careers that a T Level can lead to:</p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        laboratory technician       
+      </li>
+      <li>
+        computer games developer      
+      </li>
+      <li>
+        dental nurse
+      </li>
+      <li>
+        electrical engineering technician
+      </li>
+      <li>
+        healthcare science assistant
+      </li>
+      <li>
+        teaching assistant
+      </li>
+    </ul>
+
+    <p class="govuk-body">More subjects are coming in September 2023 and in the next few years. </p>
+
+    <p class="govuk-body">You can use your T Level to do a related higher level apprenticeship, get a job or start another type of higher education. </p>
+
+
+    <h2 class="govuk-heading-m">
+      Who can take a T Level?
+     </h2>
+
+   <p class="govuk-body">To start a T level, you’ll need to: </p>
+
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      be aged 16 to 19   
+    </li>
+    <li>
+      live in England     
+    </li>
+    <li>
+      not be in full time education
+    </li>
+  </ul>
+   
+
+   <p class="govuk-body">Schools and colleges set their own entry requirements, so check their websites to find out what GCSE grades you need. </p>
+
+
+   <h2 class="govuk-heading-m">
+    Where can I do a T level?
+   </h2>
+
+   <p class="govuk-body">Nearly 70 schools and colleges already offer T Levels. More than 400 colleges are expected to start offering them by September 2024. </p>
+
+
+
+   <h2 class="govuk-heading-m">
+    Find an T level
+  </h2>
+
+   <p class="govuk-body">You can search for colleges and schools currently offering T Levels to find out where your nearest one is and how you can get there. </p>
+
+   <p class="govuk-body">You could also view a <a href="https://amazingapprenticeships.com/higher-degree-listing/">list of all higher and degree apprenticeships</a> that are available both now and in the future.  </p>
+
+
+ 
+   <button class="govuk-button" data-module="govuk-button">
+    Find a T level
+  </button>
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

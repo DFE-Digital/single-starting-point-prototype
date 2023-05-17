@@ -1,0 +1,223 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l3-help-with-applying">Help with applying for jobs and training</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+         Interview tips
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Interview tips
+    </h1>
+
+    <p class="govuk-body-l">An interview is a conversation between you and a potential employer or training provider.
+      It is a chance for you to demonstrate how you are the right person for the role and also if it is a good fit for you.</p>
+
+      <p class="govuk-body">A potential employer may not be expecting you to have done the job before, but they will be looking for relevant experience or strengths. 
+       </p>
+
+      <p class="govuk-body">This is the same for interviews for qualifications or training, they will be looking at your education, experience and interests. 
+       </p>
+
+      <p class="govuk-body">Lots of people feel nervous before an interview, but this normal. Being prepared before you go in is the best way to over come this feeling. 
+       </p>
+
+
+    <h2 class="govuk-heading-m">
+      Before the interview
+   </h2>
+
+    <p class="govuk-body">After you have been invited to an interview, you should discuss when the best time and date is for it to take place. 
+     </p>
+
+    <p class="govuk-body">Make sure the date you choose works for you so that you have enough time to prepare and can manage it around your other commitments.  
+    </p>
+
+    <p class="govuk-body">Be sure to plan ahead what you will wear on the day of your interview. It should be suitable for the type of role you are applying for. 
+     </p>
+
+    <p class="govuk-body">It may be helpful to do some research before your interview, for example looking at a company website or attending a college open day. 
+     </p>
+
+    <h2 class="govuk-heading-m">
+      Preparing your answers
+   </h2>
+
+   <p class="govuk-body">It is important to read the job description carefully and be clear on the strengths and experience the employer is looking for.
+     </p>
+
+  <p class="govuk-body">You should prepare some examples from your past experience so you can refer to them in the interview and how they relate to the role.  
+ </p>
+
+  <p class="govuk-body">Use the <a href="https://nationalcareers.service.gov.uk/careers-advice/interview-advice/the-star-method">STAR method</a> to plan your answers to interview questions.
+  </p>
+
+  <p class="govuk-body">You might find it helpful to practice your answers with someone you trust such a teacher or work colleague.    
+  </p>
+
+  <p class="govuk-body">You will usually have some time towards the end of the interview to ask some of your own questions. 
+  </p>
+
+   <p class="govuk-body">It is important to think about and write some down before the interview to have ready.  
+  </p>
+
+
+  <h2 class="govuk-heading-m">
+    On the day of the interview
+ </h2>
+
+
+ <p class="govuk-body">On the day of the interview:</p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        give yourself plenty of time to arrive at the agreed location      
+      </li>
+      <li>
+        if your interview is online check your computer and internet connection is working before you begin      
+      </li>
+      <li>
+        be ready to start the interview 5 to 10 minutes before hand, to allow you to read through your notes and think about your answers    
+      </li>
+      <li>
+        have the contact information of the interviewer ready in case you are running late or having technical issues 
+      </li>
+    </ul>
+
+
+    <h2 class="govuk-heading-m">
+      During the interview
+   </h2>
+  
+
+
+    <p class="govuk-body">Your interview will usually begin with some introductions to the people interviewing you and explain what role or training the interview is for. 
+    </p>
+
+    <p class="govuk-body">The interviewer may tell you about the structure of the interview, the types of questions they will be asking and the style of answers they are expecting you to give. For example in the STAR method.   
+    </p>
+
+    <p class="govuk-body">They might have asked you prepare an additional activity like a presentation or do a role playing exercise as part of the conversation, so be ready to do that when asked. 
+    </p>
+
+    <p class="govuk-body">Once the interview has started you will be asked a series of questions related to the role.  
+    </p>
+
+    <p class="govuk-body">Before answering a question you might want to: 
+    </p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        think about which is the best example you can give      
+      </li>
+      <li>
+        understand what the interviewer is looking for in an response - you may want them to repeat the question     
+      </li>
+      <li>
+        refer to your notes if you need to
+      </li>
+    </ul>
+
+    <p class="govuk-body">Be ready to ask your own questions about the company and or role that you prepared earlier. 
+    </p>
+
+    <p class="govuk-body">Before the end of the interview you may wish to ask when you will hear back from them.   
+    </p>
+
+
+    <h2 class="govuk-heading-m">
+      After the interview
+     </h2>
+
+   <p class="govuk-body">You may want to follow up after the interview with an email or telephone call unless they give you a timescale for when they will contact you. 
+  </p>
+
+  <p class="govuk-body">If you were successful and you are offered the role you may want to ask some questions before you give them an answer: 
+  </p>
+
+   
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      ask for confirmation of the offer in writing, if possible a contract    
+    </li>
+    <li>
+      start dates and notice period if you need to give one 
+</li>
+    <li>
+      work patterns or arrangements, for example part-time or shift work
+    </li>
+    <li>
+      your salary expectations if you have not already discussed it
+    </li>
+  </ul>
+
+
+  <h2 class="govuk-heading-m">
+    What to do if you don't get the role 
+   </h2>
+
+
+   <p class="govuk-body">It is normal to feel disappointed to find out that you weren’t selected for a role after an interview.
+  </p>
+
+
+   <p class="govuk-body">It is normal to attend a number of interviews before being offered a role. 
+  </p>
+
+
+   <p class="govuk-body">You may want to ask the interviewer for feedback on how it went, where you could have done better and if they would be willing to contact you again if another role becomes available. 
+  </p>
+
+   <p class="govuk-body">It might be helpful to reflect on the responses you gave in the interview and the examples you used. 
+  </p>
+
+   <p class="govuk-body">You can also speak to a career adviser at the <a href="https://nationalcareers.service.gov.uk/contact-us">National Careers Service</a> about how to improve your interview technique and securing a job. 
+  </p>
+
+
+ 
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,217 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      Options after leaving school
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Options after leaving school or education
+    </h1>
+
+    <p class="govuk-body-l">Explore what you could do next</p>
+
+    <p class="govuk-body">Here you will find information about the different choices you can make after you have finished school, education or training.     </p>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+         <a href="#combine">Combine work and study </a>      
+      </li>
+      <li>
+         <a href="#study">Study</a>  
+      </li>
+      <li>
+        <a href="#work">Work</a>  
+      </li>
+    </ul>
+    
+
+    <h2 id="combine"class="govuk-heading-m">
+      Combine work and study
+   </h2>
+
+
+
+</div>
+</div>
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+
+   <ul class="dfeuk-grid-row dfeuk-card-group">
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+       <div class="dfeuk-card dfeuk-card--clickable">
+          <div class="dfeuk-card__content">
+             <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                <a href="l4-apprenticeships" >Apprenticeships</a>
+             </h2>
+             <p class="dfeuk-card__description">Apprenticeships are real jobs that allow you to earn a wage while you learn. They can take between 1 and 5 years to complete, depending on the level.</p>
+          </div>
+       </div>
+    </li>
+  
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-tlevels" >T levels</a>
+            </h2>
+            <p class="dfeuk-card__description">T Levels are nationally-recognised qualifications for 16 to 19-year-olds that takes 2 years to complete.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l4-vtqs" >Vocational Technical Qualifications (VTQs)</a>
+          </h2>
+          <p class="dfeuk-card__description">Vocational Technical Qualifications (VTQs) are practical qualifications for over 16s. They're designed to help you get the skills you need to start your career or go on to higher levels of education.</p>
+       </div>
+    </div>
+  </li>
+  </ul>
+
+
+
+
+
+   <h2 id="study"class="govuk-heading-m">
+    Study
+   </h2>
+
+
+
+
+
+
+
+   <ul class="dfeuk-grid-row dfeuk-card-group">
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+       <div class="dfeuk-card dfeuk-card--clickable">
+          <div class="dfeuk-card__content">
+             <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                <a href="l4-htqs" >Higher Technical Qualifications (HTQs)</a>
+             </h2>
+             <p class="dfeuk-card__description">Higher Technical Qualifications (HTQs) are technical qualifications that employers have helped develop so you can get the right training and skills you need to succeed at work.</p>
+          </div>
+       </div>
+    </li>
+  
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-alevels" >A levels</a>
+            </h2>
+            <p class="dfeuk-card__description">A levels are subject-based qualifications usually assessed by exams. They can lead to further study, training or work.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l4-higher-education" >Higher education</a>
+          </h2>
+          <p class="dfeuk-card__description">Higher eduction is the name for qualifications and courses you can take after 18. It includes diplomas, foundation years, bachelor degrees and more.</p>
+       </div>
+    </div>
+  </li>
+  </ul>
+
+
+
+
+
+
+
+   <h2 id="work" class="govuk-heading-m">
+    Work
+   </h2>
+
+  
+   
+
+ 
+
+
+
+   <ul class="dfeuk-grid-row dfeuk-card-group">
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+       <div class="dfeuk-card dfeuk-card--clickable">
+          <div class="dfeuk-card__content">
+             <h2 class="dfeuk-card__heading dfeuk-heading-m">
+                <a href="l4-supported-internships" >Supported internships if you have an education, health and care plan</a>
+             </h2>
+             <p class="dfeuk-card__description">Supported internships are an unpaid work-based study programme that usually lasts for one year. It includes an extended work placement that lasts for at least 6 months.</p>
+          </div>
+       </div>
+    </li> 
+  
+    <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+      <div class="dfeuk-card dfeuk-card--clickable">
+         <div class="dfeuk-card__content">
+            <h2 class="dfeuk-card__heading dfeuk-heading-m">
+               <a href="l4-school-leavers" >School leaver schemes</a>
+            </h2>
+            <p class="dfeuk-card__description">School leavers scheme is offered by some companies to young people who have completed A levels. The schemes allow you to learn and train with a large company while earning a wage.</p>
+         </div>
+      </div>
+   </li>
+   <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l4-find-a-job" >Find a job</a>
+          </h2>
+          <p class="dfeuk-card__description">Find full or part-time work using the Find a job service to search and apply for jobs in England, Scotland and Wales.</p>
+       </div>
+    </div>
+  </li>
+  </ul>
+
+
+
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

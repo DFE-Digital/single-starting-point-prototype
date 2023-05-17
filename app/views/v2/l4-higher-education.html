@@ -1,0 +1,132 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+         Higher education
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Higher education
+    </h1>
+
+    <p class="govuk-body-l">You’ve got a lot of choice when it comes to higher education. There are hundreds of different subjects to choose from. </p>
+
+
+    <h2 class="govuk-heading-m">
+      What is higher education?
+   </h2>
+
+    <p class="govuk-body">Higher education is the name for qualifications and courses you can take after 18. It includes diplomas, foundation years, bachelor degrees and more. </p>
+
+    <p class="govuk-body">There are many different types of higher education qualifications, such as:</p>
+
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        diplomas  
+      </li>
+      <li>
+        bachelor degrees  
+      </li>
+      <li>
+        foundation degrees and foundation years
+      </li>
+      <li>
+        HTQs
+      </li>
+      <li>
+        degree level apprenticeships
+      </li>
+    </ul>
+
+    <p class="govuk-body">You may decide to study a general subject, like English or history. This can help you keep your options open and give you the skills you need for many different jobs and careers.  </p>
+
+    <p class="govuk-body">Alternatively, you may want to take a specific subject like medicine, law or architecture to prepare you for a particular career.</p>
+
+    <p class="govuk-body">After you have finished a higher education course you can do a postgraduate degree, join a graduate employment scheme, or go straight into employment.</p>
+
+
+    <h2 class="govuk-heading-m">
+      Who can go to higher education?
+     </h2>
+
+   <p class="govuk-body">Most higher educations courses require you to be 18 or older.  </p>
+   
+
+  <p class="govuk-body">Each provider and qualification will have its own entry requirements that you’ll need to meet. You'll usually need A levels or a qualification that’s the same level.  </p>
+
+  <p class="govuk-body">Most universities and colleges charge a tuition fee to cover the cost of your course.  </p>
+   
+
+  <p class="govuk-body">You can apply for funding from student finance to support you. You may also be eligible for a scholarship, grant or bursary, depending on your circumstances and the subject you’re studying.  </p>
+
+
+   <h2 class="govuk-heading-m">
+    Where can I do higher education
+   </h2>
+
+   <p class="govuk-body">Courses are usually taught in universities, colleges or specialist institutions like art schools.</p>
+
+   <p class="govuk-body">You can often study flexibly at your own pace by learning online or part-time.</p>
+
+
+
+   <h2 class="govuk-heading-m">
+    Find a higher education course
+  </h2>
+
+   <p class="govuk-body">You can read more about the different types of higher education courses, what you’ll study and how to apply on the UCAS website.  </p>
+
+
+
+ 
+   <button class="govuk-button" data-module="govuk-button">
+    More about higher education from UCAS
+  </button>
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

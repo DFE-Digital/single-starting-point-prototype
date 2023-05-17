@@ -1,0 +1,131 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      Age 14 To 19? 
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Aged 14 to 19 and not sure what to do next? 
+    </h1>
+    <p class="govuk-body-l">Taking your next step in life can feel like a big leap. It's okay not to have your life mapped out yet! Thinking about your next steps in education and training is a great place to start. A new #GetTheJump campaign has been launched by the Government to help young people do just that.</div>
+
+
+
+    <div class="govuk-!-margin-bottom-7 govuk-grid-column-one-third ">
+      <img class="dfeuk-image__img" src="/public/images/skills-for-life-logo.png" alt="skills for life logo">
+   </div>
+</div>
+
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-half">
+ 
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/tN6Wp26y5dE" title="YouTube video player" frameborder="0" alt="woman jumping in a car factory" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </div>
+ 
+ 
+ 
+     <div class="govuk-!-margin-bottom-7 govuk-grid-column-one-half ">
+      <p class="govuk-body">See which training and education choices are out there for you, all in one place.
+         Learn more about T Levels, which mix classroom and on-the-job training so you can get a feel of a workplace. Or an Apprenticeship, so you can earn and learn at the same time. Or there are Higher Technical Qualifications which are teaching all the new skills that employers are looking for.
+         The National Careers Service website even includes job profiles to help you discover what different jobs involve. Get the Jump on your choices and you’ll be clued up on everything you need to know to take your next step.
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+<hr>
+
+      <h2 class="govuk-heading-l">
+         More options
+     </h2>
+
+
+<ul class="dfeuk-grid-row dfeuk-card-group">
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+     <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/yp-choices-school.png" alt="a student smiling in a library">
+        <div class="dfeuk-card__content">
+           <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="l3-options-school" >Options after leaving school and education</a>
+           </h2>
+           <p class="dfeuk-card__description">Explore what you could do next</p>
+        </div>
+     </div>
+  </li>
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/yp-help-applying.png" alt="a young person looking in a mirror while getting ready for a job interview">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l3-help-with-applying" >Help with applying for 
+               jobs and training</a>
+          </h2>
+          <p class="dfeuk-card__description">Support for interviews and writing applications for jobs and training</p>
+       </div>
+    </div>
+ </li>
+
+
+<li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+  <div class="dfeuk-card dfeuk-card--clickable">
+   <img class="dfeuk-card__img" src="/public/images/yp-explore.png" alt="a group of young people in overalls laughing">
+     <div class="dfeuk-card__content">
+        <h2 class="dfeuk-card__heading dfeuk-heading-m">
+           <a href="l3-explore" >Explore different careers</a>
+        </h2>
+        <p class="dfeuk-card__description">Discover careers you didn’t know existed</p>
+     </div>
+  </div>
+</li>
+</ul>
+ 
+
+
+
+
+
+   
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

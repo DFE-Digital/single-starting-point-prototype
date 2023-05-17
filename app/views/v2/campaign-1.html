@@ -1,0 +1,133 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      Consider a career in renewable energy
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Consider a career in renewable energy
+    </h1>
+    <p class="govuk-body-l">Playing a central role in helping to offset the impact of climate change, the UK's renewable energy industry is at the forefront of technological development, with a range of careers available for graduates</p>
+    </div>
+
+
+
+    <div class="govuk-!-margin-bottom-7 govuk-grid-column-one-third ">
+      <img class="dfeuk-image__img" src="/public/images/skills-for-life-logo.png" alt="skills for life logo">
+   </div>
+</div>
+
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-one-half">
+ 
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/fZbCSiabgKY" title="YouTube video player" alt="text says: 'how I became an engineer'. In picture: wind turbine and Rosie wearing outdoor clothes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     </div>
+ 
+ 
+ 
+     <div class="govuk-!-margin-bottom-7 govuk-grid-column-one-half ">
+      <p class="govuk-body">From wind turbines to solar panels and tidal barrages to biofuels, clean and renewable energy sources are increasingly familiar to all of us. They're now even more important than ever as world governments attempt to meet international targets for reducing carbon emissions.
+But what opportunities are there in the sector for graduates with an interest in energy and the environment? Industry insiders - from a trade association, a recruitment firm and an energy company - give their expert views on the jobs market. </p>
+ 
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="govuk-grid-row">
+   <div class="govuk-grid-column-full">
+
+<hr>
+
+      <h2 class="govuk-heading-l">
+         More options
+     </h2>
+
+
+<ul class="dfeuk-grid-row dfeuk-card-group">
+
+<li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+   <div class="dfeuk-card dfeuk-card--clickable">
+    <img class="dfeuk-card__img" src="/public/images/energy-jobs.png" alt="woman wearing protective clothing in a warehouse">
+      <div class="dfeuk-card__content">
+         <h2 class="dfeuk-card__heading dfeuk-heading-m">
+            <a href="https://nationalcareers.service.gov.uk/search-results?SearchTerm=energy">Search career choices in the energy sector</a>
+         </h2>
+         <p class="dfeuk-card__description">Browse the many jobs types available in the energy sector</p>
+      </div>
+   </div>
+ </li>
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+     <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/yp-choices-school.png" alt="a student smiling whilst studying">
+        <div class="dfeuk-card__content">
+           <h2 class="dfeuk-card__heading dfeuk-heading-m">
+              <a href="l3-options-school" >Options after leaving school and education</a>
+           </h2>
+           <p class="dfeuk-card__description">Explore what you could do next</p>
+        </div>
+     </div>
+  </li>
+  <li class="dfeuk-grid-column-one-third dfeuk-card-group__item">
+    <div class="dfeuk-card dfeuk-card--clickable">
+      <img class="dfeuk-card__img" src="/public/images/yp-help-applying.png" alt="a young person looking in a mirror while getting ready for a job interview">
+       <div class="dfeuk-card__content">
+          <h2 class="dfeuk-card__heading dfeuk-heading-m">
+             <a href="l3-help-with-applying" >Help with applying for 
+               jobs and training</a>
+          </h2>
+          <p class="dfeuk-card__description">Support for interviews and writing applications for jobs and training</p>
+       </div>
+    </div>
+ </li>
+
+
+</ul>
+ 
+
+
+
+
+
+   
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

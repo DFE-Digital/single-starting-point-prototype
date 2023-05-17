@@ -1,0 +1,146 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+   <div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+        </li>
+        {% if(page !== "" and pagename !== "") %}
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+       </li>
+       {% endif %}
+       {% if(pagel3 !== "" and pagenamel3 !== "") %}
+       <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="{{pagel3}}">{{pagenamel3}}</a>
+      </li>
+      {% endif %}
+        <li class="govuk-breadcrumbs__list-item">
+         Supported internships
+        </li>
+      </ol>
+    </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Supported internships
+    </h1>
+
+    <p class="govuk-body-l">You'll take the first step from education into the workplace while gaining the skills you need to get a paid job.  </p>
+
+    <h2 class="govuk-heading-m">
+      What is a supported internship?
+   </h2>
+
+    <p class="govuk-body">A supported internship is a unpaid work-based study programme that usually lasts for one year.  </p>
+
+    <p class="govuk-body">It includes an extended work placement that lasts for at least 6 months. The aim of a supported internship is to prepare you for working in a paid job.</p>
+
+    <p class="govuk-body">A supported internship includes:</p>
+
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        an unpaid work placement of at least 6 months      
+      </li>
+      <li>
+        support from a qualified job coach      
+      </li>
+      <li>
+        a personalised study programme, including the chance to study a relevant qualification, if suitable, and English and maths to an appropriate level
+      </li>
+    </ul>
+
+    <p class="govuk-body">After you have completed it, you could get a paid job at the same place you did your supported internship or you could look for a job with a different employer.   </p>
+
+    <p class="govuk-body">You could also carry on training by doing a traineeship or an apprenticeship. </p>
+
+
+    <h2 class="govuk-heading-m">
+      Who can do a supported internship?
+     </h2>
+
+   <p class="govuk-body">To start a supported internship, you'll need to:</p>
+
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      be aged 16 to 24     
+    </li>
+    <li>
+      have an education, health and care plan (EHC)
+    </li>
+  </ul>
+   
+
+  
+   <h2 class="govuk-heading-m">
+    Where can I do a supported internship?
+   </h2>
+
+   <p class="govuk-body">On a supported internship, you’ll spend the majority of your time in the work place, developing your skills for employment.</p>
+
+
+
+   <h2 class="govuk-heading-m">
+    Find a supported internship
+  </h2>
+
+   <p class="govuk-body">You can apply for supported internships through your school or college. </p>
+
+   <p class="govuk-body">You may be eligible for <a href="https://www.gov.uk/access-to-work">access to work funding</a> </p>
+
+   <p class="govuk-body">The support you get will depend on your needs but could include a grant to help pay towards practical support with your work, including a job coach.</p>
+
+
+   <h2 class="govuk-heading-m">
+    Help and advice
+  </h2>
+
+
+  <p class="govuk-body">You can get help and advice from: </p>
+
+
+   <ul class="govuk-list govuk-list--bullet">
+    <li>
+      <a href="https://www.disabilityrightsuk.org/guidance-resources"> Disability Rights UK:</a> information, advice and resources for disabled students
+    </li>
+    <li>
+      <a href="https://www.ndti.org.uk/resources/preparing-for-adulthood-all-tools-resources"> Preparing for Adulthood:</a> guidance on supported internships and study programmes for young people with a disability or learning difficulty
+    </li>
+    <li>
+      <a href="https://www.talkingfutures.org.uk/"> Talking Futures</a> support for parents and guardians looking to explore education and career options with their child
+    </li>
+  </ul>
+ 
+
+  
+
+
+    
+ 
+
+
+  </div>
+</div>
+
+{% endblock %}

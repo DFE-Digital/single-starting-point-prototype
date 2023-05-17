@@ -1,0 +1,72 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+
+
+{% block beforeContent %}
+<div class="govuk-!-margin-top-5 govuk-breadcrumbs">
+   <ol class="govuk-breadcrumbs__list">
+     <li class="govuk-breadcrumbs__list-item">
+       <a class="govuk-breadcrumbs__link" href="l1-home">Home</a>
+     </li>
+     {% if(page !== "" and pagename !== "") %}
+     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="{{page}}">{{pagename}}</a>
+    </li>
+    {% endif %}
+     <li class="govuk-breadcrumbs__list-item">
+      Explore different careers
+     </li>
+   </ol>
+ </div>
+{% endblock %}
+
+
+
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+
+
+
+    <h1 class="govuk-heading-xl">
+      Explore different careers
+    </h1>
+
+    <p class="govuk-body-l">Find out what a job involves and if it is right for you</p>
+
+    <p class="govuk-body">Use <a href="https://nationalcareers.service.gov.uk/explore-careers">Explore careers</a> from the National Career Service to discover how to get into a specific job, what it takes, what you’ll be doing and how much you could earn. 
+    </p>
+
+    
+
+    <h2 class="govuk-heading-m">
+      The Job Idea Generator
+   </h2>
+
+
+   <p class="govuk-body">Not sure what kind of job you could do? Or looking to retrain in a different area of work? 
+  </p>
+
+   <p class="govuk-body">Thinking about what you have done in the past, is a good place to start. 
+  </p>
+
+   <p class="govuk-body">Try using the Job idea generator to discover how your experience or interests, could help you find the right job. 
+  </p>
+
+    
+  <p class="govuk-body"><a href="l4-job-idea-generator">Go to the Job Idea Generator</a>
+  </p>
+
+
+  </div>
+</div>
+
+{% endblock %}
