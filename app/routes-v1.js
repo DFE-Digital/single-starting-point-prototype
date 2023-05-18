@@ -39,6 +39,15 @@ router.get('/', function (req, res) {
             res.render(version+'/l3-search-results')
             })
 
+            router.get('/l2-teachers', function (req, res) {
+              res.render(version+'/l2-teachers')
+              })
+  
+  
+              router.get('/l2-parents', function (req, res) {
+                res.render(version+'/l2-parents')
+                })
+
             router.get('/skills-for-life-landing', function (req, res) {
               res.render(version+'/skills-for-life-landing')
               })
