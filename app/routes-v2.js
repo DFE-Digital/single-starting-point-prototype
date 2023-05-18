@@ -204,7 +204,7 @@ router.get('/jig-1', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-1', {pagename,page})
+  res.render(version+'/jig-1', {pagename,page})
 })
 
 router.get('/jig-2', function (req, res) {
@@ -216,7 +216,7 @@ router.get('/jig-2', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-2', {pagename,page})
+  res.render(version+'/jig-2', {pagename,page})
 })
 
 router.get('/jig-3', function (req, res) {
@@ -228,7 +228,7 @@ router.get('/jig-3', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-3', {pagename,page})
+  res.render(version+'/jig-3', {pagename,page})
 })
 
 router.get('/jig-4', function (req, res) {
@@ -240,7 +240,7 @@ router.get('/jig-4', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-4', {pagename,page})
+  res.render(version+'/jig-4', {pagename,page})
 })
 
 router.get('/jig-5', function (req, res) {
@@ -252,7 +252,7 @@ router.get('/jig-5', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-5', {pagename,page})
+  res.render(version+'/jig-5', {pagename,page})
 })
 
 router.get('/jig-6', function (req, res) {
@@ -264,7 +264,7 @@ router.get('/jig-6', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-6', {pagename,page})
+  res.render(version+'/jig-6', {pagename,page})
 })
 
 router.get('/jig-results', function (req, res) {
@@ -276,7 +276,7 @@ router.get('/jig-results', function (req, res) {
   pagename="Young People" 
   }
   var page=req.session['referingUrl']
-  res.render(version+'jig-results', {pagename,page})
+  res.render(version+'/jig-results', {pagename,page})
 })
 
 
