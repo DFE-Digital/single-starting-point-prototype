@@ -38,6 +38,10 @@ router.get('/', function (req, res) {
             res.render(version+'/l3-search-results')
             })
         })
+
+        router.get('/skills-for-life-landing', function (req, res) {
+          res.render(version+'/skills-for-life-landing')
+          })
   
     //     router.get('/l3-help-with-applying', function (req, res) {
     //       res.render(version+'/l3-help-with-applying')
