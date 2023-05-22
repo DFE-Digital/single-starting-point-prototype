@@ -57,6 +57,10 @@ router.get('/', function (req, res) {
             router.get('/skills-for-life-landing', function (req, res) {
               res.render(version+'/skills-for-life-landing')
               })
+
+              router.get('/l2-help-and-support', function (req, res) {
+                res.render(version+'/l2-help-and-support')
+                })
   
     //     router.get('/l3-help-with-applying', function (req, res) {
     //       res.render(version+'/l3-help-with-applying')
