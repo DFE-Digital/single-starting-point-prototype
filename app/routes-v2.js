@@ -113,10 +113,15 @@ router.get('/l3-help-with-applying', function (req, res) {
   else if(file === "l2-young-people"){
   pagename="Young People" 
   }
+  else if(file === "l2-help-and-support"){
+    pagename="Help and support" 
+    }
   req.session['referingroute']=pagename
   req.session['referingUrl']=page
   res.render(version+'/l3-help-with-applying', {pagename,page})
 })
+
+
 
 
 
@@ -128,6 +133,9 @@ router.get('/l4-cv', function (req, res) {
   else if(req.session['referingroute'] === "Young People"){
   pagename="Young People" 
   }
+  else if(req.session['referingroute'] === "Help and support"){
+    pagename="Help and support" 
+    }
   var page=req.session['referingUrl']
   res.render(version+'/l4-cv', {pagename,page})
 })
@@ -140,6 +148,9 @@ router.get('/l4-interview-tips', function (req, res) {
   else if(req.session['referingroute'] === "Young People"){
   pagename="Young People" 
   }
+  else if(req.session['referingroute'] === "Help and support"){
+    pagename="Help and support" 
+    }
   var page=req.session['referingUrl']
   res.render(version+'/l4-interview-tips', {pagename,page})
 })
@@ -152,6 +163,9 @@ router.get('/l4-application-form', function (req, res) {
   else if(req.session['referingroute'] === "Young People"){
   pagename="Young People" 
   }
+  else if(req.session['referingroute'] === "Help and support"){
+    pagename="Help and support" 
+    }
   var page=req.session['referingUrl']
   res.render(version+'/l4-application-form', {pagename,page})
 })
@@ -306,6 +320,9 @@ router.get('/l3-options-school', function (req, res) {
   var pagename = req.session['referingroute']
   res.render(version+'/l3-options-school', {pagename,page})
 })
+
+
+
 
 
 
