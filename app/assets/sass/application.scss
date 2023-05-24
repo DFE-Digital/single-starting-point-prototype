@@ -1424,11 +1424,23 @@ p + .govuk-heading-s,
 
 .govuk-main-wrapper {
   display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (min-width: 40.0625em) {
+  .govuk-main-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.govuk-main-wrapper-v2 {
+  display: block;
   padding-top: 00px;
   padding-bottom: 00px;
 }
 @media (min-width: 40.0625em) {
-  .govuk-main-wrapper {
+  .govuk-main-wrapper-v2 {
     padding-top: 00px;
     padding-bottom: 00px;
   }
