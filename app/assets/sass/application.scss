@@ -1424,13 +1424,13 @@ p + .govuk-heading-s,
 
 .govuk-main-wrapper {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 00px;
+  padding-bottom: 00px;
 }
 @media (min-width: 40.0625em) {
   .govuk-main-wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 00px;
+    padding-bottom: 00px;
   }
 }
 
@@ -12800,7 +12800,17 @@ b {
  * 11. Align close icon with nav item arrow icons
  * 12. Add dfeuk-spacing(9) to align right and left main nav with header
  */
-.dfeuk-header {
+
+ .dfe-content-page--header {
+  background: #f7d7e6;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+
+}
+
+ .dfeuk-header {
   background-color: #000001;
 }
 .dfeuk-header:after {
