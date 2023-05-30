@@ -12849,6 +12849,43 @@ b {
 
 
 
+.ncs-button__primary {
+  background-color: #d53880;
+  width: auto;
+height: auto;
+border-radius: 44px;
+font-family: "GDS Transport";
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 24px;
+box-shadow: none;
+color: #FFFFFF;
+align-items: center;
+text-align: center;
+vertical-align: baseline;
+padding: 13px 44px;
+}
+
+@media (min-width: 40.0625em)
+.govuk-button {
+  font-size: 19px;
+  font-size: 1.1875rem;
+  line-height: 1;
+}
+
+@media (min-width: 40.0625em)
+.govuk-button {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 40.0625em)
+.govuk-button {
+  width: auto;
+}
+
+
+
  .dfeuk-header {
   background-color: #000001;
 }
