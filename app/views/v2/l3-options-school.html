@@ -30,170 +30,172 @@
 {% block content %}
 
 <div class="govuk-grid-row">
-<div class="govuk-grid-column-full">
-<h1 class="govuk-heading-xl">Training choices</h1>
-</div>
-</div>
-
-
-<div class="govuk-grid-row">
-   <div class="govuk-grid-column-one-quarter">
-
-<div class="govuk-summary-card">
-   <div class="govuk-summary-card__title-wrapper">
-     <h2 class="govuk-summary-card__title">Filters</h2>
-     <ul class="govuk-summary-card__actions">
-       <li class="govuk-summary-card__action">
-         <a class="govuk-link" href="/l3-all-choices">
-     Clear filters
-           </a>
-       </li>
-     </ul>
-   </div>
-   <div class="govuk-summary-card__content">
-
-     <form method="post" action="#">
-       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-         
-         
-         <div class="govuk-accordion__section">
-           <div class="govuk-accordion__section-header">
-             <h2 class="govuk-accordion__section-heading">
-               <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-             I want to
-             </span>
-             </h2>
-           </div>
-           <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-             <div class="govuk-form-group">
-               <fieldset class="govuk-fieldset">
-                 <!-- <legend class="govuk-fieldset__legend">
-                   Peer review outcome
-                </legend> -->
-                 <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-                   <div class="govuk-checkboxes__item">
-                     <input class="govuk-checkboxes__input" id="filter_outcome-1" name="filter_outcome-1" type="checkbox" value="learn" {{checked("filter_outcome","learn")}}>
-                     <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-1">
-                      Learn and retrain
-                      </label>
-                   </div>
-                   <div class="govuk-checkboxes__item">
-                     <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome-2" type="checkbox" value="work" {{checked("filter_outcome","work")}}>
-                     <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
-                      Find work
-                      </label>
-                   </div>
-                   
-                 </fieldset>
-               </div>
-             </div>
-           </div>
-
-
-           <div class="govuk-accordion__section">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-              Age
-              </span>
-              </h2>
-            </div>
-            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset">
-                  <!-- <legend class="govuk-fieldset__legend">
-                    Peer review outcome
-                 </legend> -->
-                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome-3" type="checkbox" value="16" checked>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
-                       16+
-                       </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-4" name="filter_outcome-4" type="checkbox" value="18" checked>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-4">
-                       18+
-                       </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-5" name="filter_outcome-5" type="checkbox" value="19" {{checked("filter_outcome","19")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-5">
-                       19+
-                       </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-6" name="filter_outcome-6" type="checkbox" value="24" {{checked("filter_outcome","24")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-6">
-                       24+
-                       </label>
-                    </div>
-                  </fieldset>
-                </div>
-              </div>
-            </div>
-
-
-           <div class="govuk-accordion__section">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-              Qualification type
-              </span>
-              </h2>
-            </div>
-            <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-              <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset">
-                  <!-- <legend class="govuk-fieldset__legend">
-                    Peer review outcome
-                 </legend> -->
-                  <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-7" name="filter_outcome-7" type="checkbox" value="0-2" {{checked("filter_outcome","0-2")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-7">
-                        Entry to GCSE (Level 0 - 2)
-                       </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-8" name="filter_outcome-8" type="checkbox" value="3" {{checked("filter_outcome","3")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-8">
-                        A level / College (Level 3)
-                       </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-9" name="filter_outcome-9" type="checkbox" value="4-7" {{checked("filter_outcome","4-7")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-9">
-                        Higher education and degree (Level 4 - 7) 
-                       </label>
-                    </div>
-                    <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-10" name="filter_outcome-10" type="checkbox" value="other" {{checked("filter_outcome","other")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-10">
-                        Personal learning and work experience
-                       </label>
-                    </div>
-                    <!-- <div class="govuk-checkboxes__item">
-                      <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome" type="checkbox" value="Green" {{checked("filter_outcome","Green")}}>
-                      <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
-                       Combined work and classroom based
-                       </label>
-                    </div> -->
-                  </fieldset>
-                </div>
-              </div>
-            </div>
-           
-         </div>
-         <button class="govuk-button" data-module="govuk-button">
-          Apply filter
-          </button>
-       </form>
+  <div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-xl">Training choices</h1>
+  </div>
+  </div>
+  
+  
+  <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-quarter">
+  
+  <div class="govuk-summary-card">
+     <div class="govuk-summary-card__title-wrapper">
+       <h2 class="govuk-summary-card__title">Filters</h2>
+       <!-- <ul class="govuk-summary-card__actions">
+         <li class="govuk-summary-card__action">
+           <a class="govuk-link" href="/l3-all-choices">
+       Clear filters
+             </a>
+         </li>
+       </ul> -->
      </div>
-   </div>
-
-   </div>
+     <div class="govuk-summary-card__content">
+  
+       <form method="post" action="#">
+         <!-- <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default"> -->
+           
+          <p class="govuk-body number-of-courses"><strong>Number of courses: 9</strong></p> 
+  
+           <div class="govuk-accordion__section">
+             <div class="govuk-accordion__section-header">
+               <h2 class="govuk-accordion__section-heading">
+                 <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+               I want to
+               </span>
+               </h2>
+             </div>
+             <!-- <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1"> -->
+               <div class="govuk-form-group">
+                 <fieldset class="govuk-fieldset">
+                   <!-- <legend class="govuk-fieldset__legend">
+                     Peer review outcome
+                  </legend> -->
+                   <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                     <div class="govuk-checkboxes__item">
+                       <input class="govuk-checkboxes__input" id="filter_outcome-1" name="filter_outcome-1" type="checkbox" value="learn" {{checked("filter_outcome","learn")}}>
+                       <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-1">
+                        Learn and retrain
+                        </label>
+                     </div>
+                     <div class="govuk-checkboxes__item">
+                       <input class="govuk-checkboxes__input" id="filter_outcome-2" name="filter_outcome-2" type="checkbox" value="work" {{checked("filter_outcome","work")}}>
+                       <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-2">
+                        Find work
+                        </label>
+                     </div>
+                     
+                   </fieldset>
+                 </div>
+               </div>
+             <!-- </div> -->
+  
+  
+             <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Age
+                </span>
+                </h2>
+              </div>
+              <!-- <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1"> -->
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <!-- <legend class="govuk-fieldset__legend">
+                      Peer review outcome
+                   </legend> -->
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-3" name="filter_outcome-3" type="checkbox" value="16" checked>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-3">
+                         16+
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-4" name="filter_outcome-4" type="checkbox" value="18" checked>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-4">
+                         18+
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-5" name="filter_outcome-5" type="checkbox" value="19" {{checked("filter_outcome","19")}}>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-5">
+                         19+
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-6" name="filter_outcome-6" type="checkbox" value="24" {{checked("filter_outcome","24")}}>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-6">
+                         24+
+                         </label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              <!-- </div> -->
+  
+  
+             <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Qualification type
+                </span>
+                </h2>
+              </div>
+              <!-- <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1"> -->
+                <div class="govuk-form-group">
+                  <fieldset class="govuk-fieldset">
+                    <!-- <legend class="govuk-fieldset__legend">
+                      Peer review outcome
+                   </legend> -->
+                    <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-7" name="filter_outcome-7" type="checkbox" value="0-2" {{checked("filter_outcome","0-2")}}>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-7">
+                          Entry to GCSE (Level 0 - 2)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-8" name="filter_outcome-8" type="checkbox" value="3" {{checked("filter_outcome","3")}}>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-8">
+                          A level / College (Level 3)
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-9" name="filter_outcome-9" type="checkbox" value="4-7" {{checked("filter_outcome","4-7")}}>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-9">
+                          Higher education and degree (Level 4 - 7) 
+                         </label>
+                      </div>
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="filter_outcome-10" name="filter_outcome-10" type="checkbox" value="other" {{checked("filter_outcome","other")}}>
+                        <label class="govuk-label govuk-checkboxes__label" for="filter_outcome-10">
+                          Personal learning and work experience
+                         </label>
+                      </div>
+  
+                    </fieldset>
+                  </div>
+                <!-- </div> -->
+              <!-- </div> -->
+             
+           </div>
+  
+           <p class="govuk-body"><a class="govuk-link" href="/l3-all-choices">
+            Clear filters
+                  </a></p>
+  
+  
+           <!-- <button class="govuk-button" data-module="govuk-button">
+            Apply filter
+            </button> -->
+         </form>
+       </div>
+     </div>
+  
+     </div>
 
 
 
@@ -655,6 +657,25 @@
 
         <div class="govuk-grid-column-full">
         <hr>
+
+
+
+
+        <div class="dfeuk-card dfeuk-card--clickable">
+          <div class="dfeuk-card__content">
+             <h2 class="dfeuk-card__heading dfeuk-heading-l">
+                <a class="dfeuk-card__link" href="https://www.gov.uk/find-a-job">Find a job</a>
+             </h2>
+             <p class="dfeuk-card__description">Find full or part-time work using the 'Find a job' service to search and apply for jobs in England, Scotland and Wales.
+            </p>
+          </div>
+       </div>
+  
+        
+
+
+
+
         </div>
 </div>
 
