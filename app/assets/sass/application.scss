@@ -12865,9 +12865,12 @@ align-items: center;
 text-align: center;
 vertical-align: baseline;
 padding: 13px 44px;
+margin-bottom: 0px;
 }
 
-
+.ncs-button__primary:hover {
+  background-color: #912b88;
+}
 
 
 
