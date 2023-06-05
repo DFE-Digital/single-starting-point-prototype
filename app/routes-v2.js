@@ -61,6 +61,8 @@ router.get('/', function (req, res) {
               router.get('/l2-help-and-support', function (req, res) {
                 res.render(version+'/l2-help-and-support')
                 })
+
+                
   
     //     router.get('/l3-help-with-applying', function (req, res) {
     //       res.render(version+'/l3-help-with-applying')
@@ -96,6 +98,16 @@ router.get('/l3-all-choices', function (req, res) {
   res.render(version+'/l3-all-choices', {})
 })
 
+// router.get('/l3-explore', function (req, res) {
+//   req.session['referingroute']="Training choices"
+//   req.session['referingUrl']="/l3-explore"
+//   res.render(version+'/l3-explore', {})
+// })
+
+
+
+
+
 // HELP WITH APPLYING
 
 router.get('/l3-help-with-applying', function (req, res) {
@@ -120,6 +132,8 @@ router.get('/l3-help-with-applying', function (req, res) {
   req.session['referingUrl']=page
   res.render(version+'/l3-help-with-applying', {pagename,page})
 })
+
+
 
 
 
@@ -179,23 +193,44 @@ router.get('/l4-application-form', function (req, res) {
 
 // EXPLORE DIFFERENT CAREERS
 
+// router.get('/l3-explore', function (req, res) {
+//   var referer=req.headers.referer
+//   const refererUrl = new URL(referer);
+//   var page=refererUrl.pathname
+//   var file=page.substring(page.lastIndexOf('/')+1)
+//   console.log(referer)
+//   console.log(page)
+//   console.log(file)
+//   var pagename=""
+//   if(file === "l2-adults") {
+//   pagename="Adults"
+//   }
+//   else if(file === "l2-young-people"){
+//   pagename="Young People" 
+//   }
+//   req.session['referingroute']=pagename
+//   req.session['referingUrl']=page
+//   res.render(version+'/l3-explore', {pagename,page})
+// })
+
+
 router.get('/l3-explore', function (req, res) {
-  var referer=req.headers.referer
-  const refererUrl = new URL(referer);
-  var page=refererUrl.pathname
-  var file=page.substring(page.lastIndexOf('/')+1)
-  console.log(referer)
-  console.log(page)
-  console.log(file)
-  var pagename=""
-  if(file === "l2-adults") {
-  pagename="Adults"
-  }
-  else if(file === "l2-young-people"){
-  pagename="Young People" 
-  }
-  req.session['referingroute']=pagename
-  req.session['referingUrl']=page
+  // var referer=req.headers.referer
+  // const refererUrl = new URL(referer);
+  // var page=refererUrl.pathname
+  // var file=page.substring(page.lastIndexOf('/')+1)
+  // console.log(referer)
+  // console.log(page)
+  // console.log(file)
+  // var pagename=""
+  // if(file === "l2-adults") {
+  // pagename="Adults"
+  // }
+  // else if(file === "l2-young-people"){
+  // pagename="Young People" 
+  // }
+  var page = req.session['referingUrl']
+  var pagename = req.session['referingroute']
   res.render(version+'/l3-explore', {pagename,page})
 })
 
