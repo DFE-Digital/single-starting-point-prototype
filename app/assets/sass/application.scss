@@ -13533,7 +13533,7 @@ margin-bottom: 0px;
   line-height: 1.33333;
   border-bottom: 4px solid transparent;
   border-top: 4px solid transparent;
-  color: #000001;
+  color: #ffffff;
   display: block;
   padding: 12px 16px;
   text-decoration: none;
@@ -13553,7 +13553,7 @@ margin-bottom: 0px;
 }
 @media (min-width: 61.875em) {
   .dfeuk-header__navigation-link {
-    color: #000001;
+    color: #ffffff;
     line-height: normal;
   }
 }
@@ -13568,7 +13568,7 @@ margin-bottom: 0px;
 }
 @media (min-width: 61.875em) {
   .dfeuk-header__navigation-link:visited {
-    color: #000001;
+    color: #ffffff;
   }
 }
 .dfeuk-header__navigation-link:hover {
@@ -16111,9 +16111,10 @@ header {
   border-bottom: 10px solid #D30172;
 }
 
-@media (min-width: 40.0625em) {
+// menu text colour
+@media (min-width: 990px) {
   .dfeuk-header__navigation-link {
-    color: #000001 !important;
+    color: #ffffff !important;
   }
   .dfeuk-header__navigation-link:focus {
     color: #0b0c0c !important;
